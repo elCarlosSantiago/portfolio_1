@@ -1,0 +1,27 @@
+//Main App Styles
+.App {
+  font-family: 'Shippori Mincho B1', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+//Header styling
+
+.header {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      padding: 0 1rem;
+    }
+  }
+}
