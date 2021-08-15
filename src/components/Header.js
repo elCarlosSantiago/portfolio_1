@@ -5,7 +5,6 @@ const Header = (props) => {
 
   return (
     <header className='header'>
-      <h1>Carlos Santiago Nevett</h1>
       <nav>
         <p>About</p>
         <p>Skills</p>
