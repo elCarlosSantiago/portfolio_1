@@ -1,14 +1,14 @@
 import './styles/appStyles.css';
-import Header from './components/Header';
 import ParticleBackground from './components/ParticleBackground';
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
     <div className="App">
-      <div className='particle-div'>
+      <div className="particle-div">
         <ParticleBackground className="particle-background" />
       </div>
-      <Header />
+      <LandingPage />
     </div>
   );
 }
