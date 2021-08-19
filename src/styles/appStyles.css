@@ -11,7 +11,6 @@ body {
 .App {
   position: relative;
   overflow: hidden;
-  height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0a0614), color-stop(#1c1629), color-stop(#2e203f), color-stop(#442954), color-stop(#5d3269), color-stop(#763b73), color-stop(#8f447c), color-stop(#a84d84), color-stop(#bf5e85), color-stop(#d37186), color-stop(#e48689), to(#f29c8f));
   background-image: linear-gradient(to bottom, #0a0614, #1c1629, #2e203f, #442954, #5d3269, #763b73, #8f447c, #a84d84, #bf5e85, #d37186, #e48689, #f29c8f);
 }
@@ -25,7 +24,7 @@ body {
 }
 
 .particle-div #tsparticles {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 
@@ -43,7 +42,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
   z-index: 100;
 }
 
@@ -71,12 +71,12 @@ body {
           justify-content: space-between;
 }
 
-.landing-page .header nav p {
+.landing-page .header nav a {
   padding: 0 1rem;
   font-size: 1.2rem;
 }
 
-.landing-page .header nav p:hover {
+.landing-page .header nav a:hover {
   text-decoration: underline;
 }
 
@@ -111,5 +111,11 @@ body {
 .landing-page .fa-chevron-circle-down:hover {
   z-index: 100;
   opacity: 1;
+}
+
+.about {
+  z-index: 101;
+  max-height: 100vh;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=appStyles.css.map */
