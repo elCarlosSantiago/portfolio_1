@@ -21,9 +21,12 @@ body {
 }
 
 .particle-div particle-background {
-  height: 100%;
-  width: 100%;
-  z-index: -1;
+  z-index: -10;
+}
+
+.particle-div #tsparticles {
+  height: 100vh;
+  width: 100vw;
 }
 
 .landing-page {
@@ -41,6 +44,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
+  z-index: 100;
 }
 
 .landing-page .header {
@@ -55,6 +59,7 @@ body {
           align-items: center;
   padding: 0 1.5rem;
   text-transform: uppercase;
+  z-index: 100;
 }
 
 .landing-page .header nav {
@@ -71,14 +76,40 @@ body {
   font-size: 1.2rem;
 }
 
-.landing-page .Typewriter {
+.landing-page .header nav p:hover {
+  text-decoration: underline;
+}
+
+.landing-page .typewriter-div {
   color: white;
   font-size: 4rem;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-page .typewriter-div :nth-child(2) span {
+  font-size: 2rem;
 }
 
 .landing-page .fa-chevron-circle-down {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  opacity: 0.5;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.landing-page .fa-chevron-circle-down:hover {
+  z-index: 100;
+  opacity: 1;
 }
 /*# sourceMappingURL=appStyles.css.map */
