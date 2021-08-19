@@ -1,6 +1,6 @@
 import Header from './Header';
 import NameTypewriter from './NameTypewriter';
-
+import { Link } from 'react-scroll';
 const LandingPage = () => {
   return (
     <div className="landing-page">
@@ -11,7 +11,7 @@ const LandingPage = () => {
           loop: true,
         }}
       />
-      <i class="fas fa-chevron-circle-down"></i>
+      <Link class="fas fa-chevron-circle-down" smooth={true} to="about"></Link>
     </div>
   );
 };

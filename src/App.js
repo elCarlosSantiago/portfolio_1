@@ -1,6 +1,7 @@
 import './styles/appStyles.css';
 import ParticleBackground from './components/ParticleBackground';
 import LandingPage from './components/LandingPage';
+import About from './components/About';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <ParticleBackground className="particle-background" />
       </div>
       <LandingPage />
+      <About />
     </div>
   );
 }
