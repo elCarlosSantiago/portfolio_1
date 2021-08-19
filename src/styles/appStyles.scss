@@ -34,26 +34,73 @@ body {
 .particle-div {
   position: absolute;
   particle-background {
+    z-index: -10;
+  }
+  #tsparticles {
     height: 100vh;
     width: 100vw;
   }
 }
 
-//Header styling
-
-.header {
+//Landing Page
+.landing-page {
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
   align-items: center;
-  padding: 0 1.5rem;
-  text-transform: uppercase;
-  nav {
-    display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
+  height: 100vh;
+  z-index: 100;
 
-    p {
-      padding: 0 1rem;
-      font-size: 1.2rem;
+  //Header styling
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    z-index: 100;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        padding: 0 1rem;
+        font-size: 1.2rem;
+      }
+      p:hover {
+        text-decoration: underline;
+      }
     }
+  }
+  //Name Typewriter
+
+  .typewriter-div {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    :nth-child(2) {
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  //Arrow Icon
+  .fa-chevron-circle-down {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+  }
+  .fa-chevron-circle-down:hover {
+    // color: #5d3269;
+    z-index: 100;
+    opacity: 1;
   }
 }
