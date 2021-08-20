@@ -2,6 +2,7 @@ import './styles/appStyles.css';
 import ParticleBackground from './components/ParticleBackground';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
+import Skills from './components/skills';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </div>
       <LandingPage />
       <About />
+      <Skills />
     </div>
   );
 }

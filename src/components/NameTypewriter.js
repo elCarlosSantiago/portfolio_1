@@ -6,14 +6,14 @@ const NameTypewriter = () => {
 
   setTimeout(() => {
     setIsTyped(true);
-  }, 5000);
+  }, 4000);
 
   return (
     <div className="typewriter-div">
       <Typewriter
         id="name-typewriter"
         onInit={(tw) => {
-          tw.start().typeString("Hello I'm Carlos Santiago");
+          tw.start().changeDelay(100).typeString("Hello I'm Carlos Santiago");
         }}
       />
       {isTyped && (
@@ -23,14 +23,17 @@ const NameTypewriter = () => {
             loop: true,
           }}
           onInit={(tw) => {
-            tw.typeString("I'm a Full-Stack Software Engineer")
-              .pauseFor(2500)
+            tw.changeDelay(70)
+              .typeString("I'm a Full-Stack Software Engineer")
+              .pauseFor(1000)
+              .changeDeleteSpeed(40)
               .deleteAll()
               .typeString('With a background in Civil Engineering')
-              .pauseFor(2500)
+              .pauseFor(1000)
+              .changeDeleteSpeed(40)
               .deleteAll()
               .typeString('Welcome to my website!')
-              .pauseFor(2500)
+              .pauseFor(1000)
               .deleteAll()
               .start();
           }}
