@@ -3,6 +3,7 @@ import ParticleBackground from './components/ParticleBackground';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
 import Skills from './components/skills';
+import Projects from './components/projects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <LandingPage />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }

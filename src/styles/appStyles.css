@@ -24,7 +24,6 @@ body {
 }
 
 .particle-div #tsparticles {
-  height: 99%;
   width: 100vw;
 }
 
@@ -63,15 +62,10 @@ body {
   text-transform: uppercase;
   z-index: 100;
   cursor: pointer;
+  position: fixed;
 }
 
 .landing-page .header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   font-family: monospace;
 }
 
@@ -82,6 +76,10 @@ body {
 }
 
 .landing-page .header nav a:hover {
+  text-decoration: underline;
+}
+
+.landing-page .header nav .active {
   text-decoration: underline;
 }
 
@@ -201,5 +199,11 @@ body {
 
 .skills p {
   font-size: 1rem;
+}
+
+.projects {
+  z-index: 101;
+  max-height: 100vh;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=appStyles.css.map */
