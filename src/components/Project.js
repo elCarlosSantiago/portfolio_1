@@ -4,7 +4,7 @@ const Project = (props) => {
   const orientation = data.project_id % 2 === 0 ? true : false;
 
   return (
-    <article className="project p-1">
+    <article className="project">
       {orientation && <div className="image-wrapper">
         <img alt="project-1-thumbnail" src={data.profile} />
       </div>}
