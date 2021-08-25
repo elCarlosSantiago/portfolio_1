@@ -184,6 +184,10 @@ body a {
   margin-left: 1rem;
 }
 
+.about section p {
+  text-align: justify;
+}
+
 .skills {
   z-index: 101;
   max-height: 100vh;
@@ -233,6 +237,7 @@ body a {
 }
 
 .projects .project {
+  margin: 0 auto;
   -webkit-box-shadow: 10px 10px 10px black;
           box-shadow: 10px 10px 10px black;
   display: -webkit-box;
@@ -243,7 +248,8 @@ body a {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 70%;
-  max-height: 33vh;
+  height: 35vh;
+  max-height: 45vh;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
@@ -267,8 +273,11 @@ body a {
   padding: 1.5rem 1.5rem;
 }
 
+.projects .project .project-description p {
+  margin: 1rem 0.5rem;
+}
+
 .projects .project .project-description .link-wrapper {
-  width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,6 +287,8 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .projects .project .image-wrapper {
@@ -304,5 +315,85 @@ body a {
   z-index: 101;
   max-height: 100vh;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact h2 {
+  margin: 0 auto;
+}
+
+.contact .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  border-radius: 0.7vw;
+  padding: 1rem;
+  -webkit-box-shadow: 2px 2px 3px whitesmoke;
+          box-shadow: 2px 2px 3px whitesmoke;
+}
+
+.contact input {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 75%;
+  border-radius: 0.7vw;
+  background-color: whitesmoke;
+}
+
+.contact textarea {
+  font-family: 'fira sans', lato, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  border-radius: 0.7vw;
+  padding: 0.7rem 0rem 0rem 1rem;
+  width: 90%;
+  height: 200px;
+  background-color: whitesmoke;
+}
+
+.contact button {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7vw;
+  border: none;
+  -webkit-box-shadow: 2px 2px 2px whitesmoke;
+          box-shadow: 2px 2px 2px whitesmoke;
+  color: whitesmoke;
+  background-color: inherit;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #024302;
+  color: white;
 }
 /*# sourceMappingURL=appStyles.css.map */

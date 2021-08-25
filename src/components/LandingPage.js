@@ -12,7 +12,7 @@ const LandingPage = () => {
           loop: true,
         }}
       />
-      <Link class="fas fa-chevron-circle-down" smooth={true} to="about"></Link>
+      <Link className="fas fa-chevron-circle-down" smooth={true} to="about"></Link>
     </div>
   );
 };
