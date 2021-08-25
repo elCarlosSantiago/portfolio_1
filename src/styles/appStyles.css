@@ -8,11 +8,29 @@ body {
   font-family: 'fira sans', lato, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body h2 {
+  font-size: 3rem;
+}
+
+body h3 {
+  font-size: 1.6rem;
+}
+
+body p {
+  font-size: 1rem;
+}
+
+body a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
 .App {
   position: relative;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a0614), color-stop(#1c1629), color-stop(#2e203f), color-stop(#442954), color-stop(#5d3269), color-stop(#763b73), color-stop(#8f447c), color-stop(#a84d84), color-stop(#8f447c), color-stop(#763b73), color-stop(#5d3269), color-stop(#442954), color-stop(#2e203f), color-stop(#1c1629), to(#0a0614));
-  background-image: linear-gradient(to bottom, #0a0614, #1c1629, #2e203f, #442954, #5d3269, #763b73, #8f447c, #a84d84, #8f447c, #763b73, #5d3269, #442954, #2e203f, #1c1629, #0a0614);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a0614), color-stop(#1c1629), color-stop(#2e203f), color-stop(#442954), color-stop(#5d3269), color-stop(#763b73), color-stop(#8f447c), color-stop(#763b73), color-stop(#5d3269), color-stop(#442954), color-stop(#2e203f), color-stop(#1c1629), to(#0a0614));
+  background-image: linear-gradient(to bottom, #0a0614, #1c1629, #2e203f, #442954, #5d3269, #763b73, #8f447c, #763b73, #5d3269, #442954, #2e203f, #1c1629, #0a0614);
 }
 
 .particle-div {
@@ -185,23 +203,67 @@ body {
           justify-content: center;
 }
 
-.skills h2 {
-  font-size: 3rem;
-}
-
 .skills h3 {
-  font-size: 1.6rem;
-  border-bottom: 1.5px solid whitesmoke;
+  border-bottom: 1.8px solid whitesmoke;
   width: 25%;
   text-align: center;
   padding-bottom: 0.5rem;
 }
 
-.skills p {
-  font-size: 1rem;
+.projects {
+  z-index: 101;
+  max-height: 100vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.projects {
+.projects .project {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 70%;
+  padding: 0.2rem;
+}
+
+.projects .project .project-description {
+  background-color: #1c1629;
+  width: 35%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.projects .project .image-wrapper {
+  border: 5px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects .project img {
+  overflow: hidden;
+}
+
+.contact {
   z-index: 101;
   max-height: 100vh;
   min-height: 100vh;

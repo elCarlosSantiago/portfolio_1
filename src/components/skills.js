@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <div name="skills" className="skills">
+    <div className="skills">
       <h2>SERN Stacked</h2>
       <h3>Front-End</h3>
       <p>JavaScript React Redux HTML CSS </p>

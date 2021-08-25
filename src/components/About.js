@@ -2,7 +2,7 @@ import profilePic from '../assets/profile.png';
 
 const About = () => {
   return (
-    <div name="about" className="about">
+    <div className="about">
       <section>
         <img alt="profile" src={profilePic} />
         <article>
@@ -17,7 +17,10 @@ const About = () => {
             I love to build full-stack web applications and am passionate about software
             development.
           </p>
-          <p>I'm always looking to stay busy so check back for regular updates to the projects section!</p>
+          <p>
+            I'm always looking to stay busy so check back for regular updates to the
+            projects section!
+          </p>
         </article>
       </section>
     </div>
