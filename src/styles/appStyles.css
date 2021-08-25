@@ -228,6 +228,10 @@ body a {
       justify-content: space-around;
 }
 
+.projects h2 {
+  margin: 0.1rem auto 0;
+}
+
 .projects .project {
   -webkit-box-shadow: 10px 10px 10px black;
           box-shadow: 10px 10px 10px black;
@@ -239,9 +243,9 @@ body a {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 70%;
-  max-height: 35vh;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  max-height: 33vh;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .projects .project .project-description {

@@ -186,14 +186,17 @@ body {
   align-items: center;
   justify-content: space-around;
 
+  h2 {
+    margin: 0.1rem auto 0;
+  }
   .project {
     box-shadow: 10px 10px 10px black;
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
     width: 70%;
-    max-height: 35vh;
-    transition: all 0.4s ease-in-out;
+    max-height: 33vh;
+    transition: all 0.6s ease-in-out;
 
     .project-description {
       background-color: #1c1629;
