@@ -194,21 +194,32 @@ body {
     flex-wrap: nowrap;
     width: 70%;
     padding: 0.2rem;
+    max-height: 30vh;
 
     .project-description {
       background-color: #1c1629;
       width: 35%;
-      flex-grow: 1;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 1.5rem;
+
+      .link-wrapper {
+        width: 65%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
     }
 
     .image-wrapper {
-      border: 5px solid red;
       display: flex;
       justify-content: center;
+      width: 65%;
     }
     img {
-      // max-width: 350px;
-      // max-height: 30px;
+      width: 100%;
       overflow: hidden;
     }
   }
