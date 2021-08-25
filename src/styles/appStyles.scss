@@ -7,6 +7,21 @@ body {
   color: white;
   font-family: 'fira sans', lato, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
     'Helvetica Neue', sans-serif;
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .App {
@@ -20,8 +35,6 @@ body {
     #442954,
     #5d3269,
     #763b73,
-    #8f447c,
-    #a84d84,
     #8f447c,
     #763b73,
     #5d3269,
@@ -39,7 +52,6 @@ body {
     z-index: -10;
   }
   #tsparticles {
-    height: 99%;
     width: 100vw;
   }
 }
@@ -64,10 +76,9 @@ body {
     text-transform: uppercase;
     z-index: 100;
     cursor: pointer;
+    position: fixed;
 
     nav {
-      display: flex;
-      justify-content: flex-end;
       font-family: monospace;
 
       a {
@@ -76,6 +87,9 @@ body {
         text-shadow: 1px 1px 1px black;
       }
       a:hover {
+        text-decoration: underline;
+      }
+      .active {
         text-decoration: underline;
       }
     }
@@ -88,7 +102,6 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    // text-shadow: 1.5px 3px 1px black;
     font-family: 'lato', 'fira sans';
 
     :nth-child(2) {
@@ -154,18 +167,57 @@ body {
   align-items: center;
   justify-content: center;
 
-  h2 {
-    font-size: 3rem;
-  }
   h3 {
-    font-size: 1.6rem;
-    border-bottom: 1.5px solid whitesmoke;
+    border-bottom: 1.8px solid whitesmoke;
     width: 25%;
     text-align: center;
     padding-bottom: 0.5rem;
   }
+}
 
-  p {
-    font-size: 1rem;
+//Projects
+
+.projects {
+  z-index: 101;
+  max-height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+
+  .project {
+    // border: 4px solid whitesmoke;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 70%;
+    padding: 0.2rem;
+
+    .project-description {
+      background-color: #1c1629;
+      width: 35%;
+      flex-grow: 1;
+    }
+
+    .image-wrapper {
+      border: 5px solid red;
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      // max-width: 350px;
+      // max-height: 30px;
+      overflow: hidden;
+    }
   }
+}
+
+//Contact
+
+.contact {
+  z-index: 101;
+  max-height: 100vh;
+  min-height: 100vh;
 }

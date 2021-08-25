@@ -4,6 +4,9 @@ const Header = (props) => {
   return (
     <header className="header">
       <nav>
+        <Link spy={true} smooth={true} to="landing-page">
+          Home
+        </Link>
         <Link spy={true} smooth={true} to="about">
           About
         </Link>
