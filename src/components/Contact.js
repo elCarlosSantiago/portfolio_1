@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import env from 'react-dotenv';
 
 const Contact = () => {
@@ -25,7 +25,6 @@ const Contact = () => {
     );
     e.target.reset();
   }
-
 
   return (
     <div className="contact">
