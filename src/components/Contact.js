@@ -58,9 +58,7 @@ const Contact = () => {
     const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
     const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
     const emailUserId = process.env.REACT_APP_EMAIL_USER_ID;
-    console.log(process.env.REACT_APP_EMAIL_SERVICE_ID)
-    console.log(templateId)
-    console.log(emailUserId)
+
     emailjs.sendForm(serviceId, templateId, evt.target, emailUserId).then(
       (result) => {
         console.log('Email Sent', result.text);
