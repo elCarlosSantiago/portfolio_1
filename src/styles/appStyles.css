@@ -6,6 +6,7 @@ body {
   font-size: 62.5%;
   color: white;
   font-family: 'fira sans', lato, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scrollbar-width: none;
 }
 
 body h2 {
@@ -26,11 +27,15 @@ body a {
   color: white;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .App {
   position: relative;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a0614), color-stop(#1c1629), color-stop(#2e203f), color-stop(#442954), color-stop(#5d3269), color-stop(#763b73), color-stop(#8f447c), color-stop(#763b73), color-stop(#5d3269), color-stop(#442954), color-stop(#2e203f), color-stop(#1c1629), to(#0a0614));
-  background-image: linear-gradient(to bottom, #0a0614, #1c1629, #2e203f, #442954, #5d3269, #763b73, #8f447c, #763b73, #5d3269, #442954, #2e203f, #1c1629, #0a0614);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a0614), color-stop(#1c1629), color-stop(#2e203f), color-stop(#442954), color-stop(#5d3269), color-stop(#442954), color-stop(#2e203f), to(#1c1629));
+  background-image: linear-gradient(to bottom, #0a0614, #1c1629, #2e203f, #442954, #5d3269, #442954, #2e203f, #1c1629);
 }
 
 .particle-div {
@@ -127,6 +132,7 @@ body a {
   opacity: 0.5;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .fa-chevron-circle-down:hover {
@@ -381,19 +387,27 @@ body a {
   padding: 0.5rem 1rem;
   border-radius: 0.7vw;
   border: none;
-  -webkit-box-shadow: 2px 2px 2px whitesmoke;
-          box-shadow: 2px 2px 2px whitesmoke;
-  color: whitesmoke;
+  color: white;
   background-color: inherit;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
-.contact button:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+.contact .error {
+  font-size: 1rem;
+}
+
+.contact .enabled {
+  cursor: pointer;
   background-color: #024302;
   color: white;
+}
+
+.contact .enabled:hover {
+  -webkit-box-shadow: 3px 3p 3px #442954;
+          box-shadow: 3px 3p 3px #442954;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 /*# sourceMappingURL=appStyles.css.map */
