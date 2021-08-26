@@ -101,7 +101,7 @@ const Contact = () => {
         {errors.message && <span className="error">{errors.message}</span>}
         <button
           disabled={buttonDisabled}
-          className={!buttonDisabled && 'enabled'}
+          className={!buttonDisabled ? 'enabled' : undefined}
           type="submit"
           value="Send">
           Send Message
