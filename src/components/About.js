@@ -6,7 +6,7 @@ const About = () => {
       <section>
         <img alt="profile" src={profilePic} />
         <article>
-          <h2>Hello! My name is Carlos Santiago</h2>
+          <h2>About me</h2>
           <p>
             I've spent the last few years working in project engineering and leading
             multi-disciplinary teams. I am leveraging my experience with civil

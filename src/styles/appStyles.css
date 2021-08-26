@@ -71,14 +71,12 @@ body::-webkit-scrollbar {
 }
 
 .landing-page .header {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -87,6 +85,11 @@ body::-webkit-scrollbar {
   z-index: 100;
   cursor: pointer;
   position: fixed;
+  width: 97%;
+}
+
+.landing-page .header img {
+  width: 55px;
 }
 
 .landing-page .header nav {

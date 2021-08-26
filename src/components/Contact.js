@@ -95,10 +95,10 @@ const Contact = () => {
         <textarea onChange={onChange} placeholder="Your message" name="message" />
         {successSend && <p>Your message was successful.</p>}
         {emailError && <p>There was an error sending your message.</p>}
-        {errors.from_name && <div className="error">{errors.from_name}</div>}
-        {errors.from_email && <div className="error">{errors.from_email}</div>}
-        {errors.subject && <div className="error">{errors.subject}</div>}
-        {errors.message && <div className="error">{errors.message}</div>}
+        {errors.from_name && <span className="error">{errors.from_name}</span>}
+        {errors.from_email && <span className="error">{errors.from_email}</span>}
+        {errors.subject && <span className="error">{errors.subject}</span>}
+        {errors.message && <span className="error">{errors.message}</span>}
         <button
           disabled={buttonDisabled}
           className={!buttonDisabled && 'enabled'}

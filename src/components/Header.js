@@ -1,8 +1,9 @@
 import { Link } from 'react-scroll';
-
+import logo from '../assets/favicon.ico';
 const Header = (props) => {
   return (
     <header className="header">
+      <img alt="Save CS by Liliane Lass Erbe from the Noun Project" src={logo} />
       <nav>
         <Link spy={true} smooth={true} to="landing-page">
           Home

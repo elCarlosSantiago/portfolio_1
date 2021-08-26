@@ -78,15 +78,19 @@ body::-webkit-scrollbar {
 
   //Header styling
   .header {
-    align-self: flex-end;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1.5rem 0;
     text-transform: uppercase;
     z-index: 100;
     cursor: pointer;
     position: fixed;
+    width:97%;
+
+    img {
+      width:55px;
+    }
 
     nav {
       font-family: monospace;
