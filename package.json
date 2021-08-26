@@ -43,10 +43,6 @@
     ]
   },
   "react-dotenv": {
-    "whitelist": [
-      "EMAIL_SERVICE_ID",
-      "EMAIL_TEMPLATE_ID",
-      "EMAIL_USER_ID"
-    ]
+    "whitelist": []
   }
 }
