@@ -1,6 +1,6 @@
 import emailjs from 'emailjs-com';
 import { useEffect, useState } from 'react';
-import env from 'react-dotenv';
+
 import * as yup from 'yup';
 import contactFormSchema from '../utils/contactFormSchema';
 
@@ -55,10 +55,12 @@ const Contact = () => {
   const sendEmail = (evt) => {
     evt.preventDefault();
 
-    const serviceId = env.EMAIL_SERVICE_ID;
-    const templateId = env.EMAIL_TEMPLATE_ID;
-    const emailUserId = env.EMAIL_USER_ID;
-
+    const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
+    const emailUserId = process.env.REACT_APP_EMAIL_USER_ID;
+    console.log(process.env.REACT_APP_EMAIL_SERVICE_ID)
+    console.log(templateId)
+    console.log(emailUserId)
     emailjs.sendForm(serviceId, templateId, evt.target, emailUserId).then(
       (result) => {
         console.log('Email Sent', result.text);
