@@ -34,18 +34,23 @@ body::-webkit-scrollbar {
   overflow: hidden;
   background-image: linear-gradient(
     to bottom,
-    #0a0614,
-    #1c1629,
-    #2e203f,
-    #442954,
-    #5d3269,
-    // #763b73,
-    // #8f447c,
-    // #763b73,
-    // #5d3269,
-    #442954,
-    #2e203f,
-    #1c1629
+    #042839,
+    #042839,
+    #042839,
+    #042839,
+    #042839,
+    #07384d,
+    #0b4962,
+    #0d5b77,
+    #0f6d8d,
+    #2f719a,
+    #4a75a4,
+    #6478ac,
+    // #8a6b9a,
+    // #9d627e,
+    #A77256,
+    #9f6061,
+    #92644a
   );
 }
 
@@ -62,6 +67,7 @@ body::-webkit-scrollbar {
 
 //Landing Page
 .landing-page {
+  background-image: url('../assets/header-background.jpg');
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -87,14 +93,14 @@ body::-webkit-scrollbar {
 
       a {
         padding: 0 1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-shadow: 1px 1px 1px black;
       }
       a:hover {
         text-decoration: underline;
       }
       .active {
-        text-decoration: underline;
+        color: orange;
       }
     }
   }
@@ -102,7 +108,7 @@ body::-webkit-scrollbar {
 
   .typewriter-div {
     color: whitesmoke;
-    font-size: 4rem;
+    font-size: 5rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -267,8 +273,10 @@ body::-webkit-scrollbar {
     align-items: center;
     width: 30%;
     border-radius: 0.7vw;
-    padding: 1rem;
-    box-shadow: 2px 2px 3px whitesmoke;
+    padding: 2rem 2rem 1.5rem;
+    box-shadow: 10px 10px 10px black;
+    background-color: #042839;
+
   }
   input {
     font-size: 1rem;
@@ -280,7 +288,6 @@ body::-webkit-scrollbar {
     background-color: whitesmoke;
   }
   textarea {
-    font-family: 'fira sans', lato, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     border-radius: 0.7vw;
     padding: 0.7rem 0rem 0rem 1rem;
@@ -294,8 +301,7 @@ body::-webkit-scrollbar {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     border-radius: 0.7vw;
-    border: none;
-    color: white;
+    color: gray;
     background-color: inherit;
     transition: all 0.5s ease-in-out;
     cursor: not-allowed;

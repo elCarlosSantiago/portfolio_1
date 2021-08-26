@@ -34,8 +34,8 @@ body::-webkit-scrollbar {
 .App {
   position: relative;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0a0614), color-stop(#1c1629), color-stop(#2e203f), color-stop(#442954), color-stop(#5d3269), color-stop(#442954), color-stop(#2e203f), to(#1c1629));
-  background-image: linear-gradient(to bottom, #0a0614, #1c1629, #2e203f, #442954, #5d3269, #442954, #2e203f, #1c1629);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#042839), color-stop(#042839), color-stop(#042839), color-stop(#042839), color-stop(#042839), color-stop(#07384d), color-stop(#0b4962), color-stop(#0d5b77), color-stop(#0f6d8d), color-stop(#2f719a), color-stop(#4a75a4), color-stop(#6478ac), color-stop(#A77256), color-stop(#9f6061), to(#92644a));
+  background-image: linear-gradient(to bottom, #042839, #042839, #042839, #042839, #042839, #07384d, #0b4962, #0d5b77, #0f6d8d, #2f719a, #4a75a4, #6478ac, #A77256, #9f6061, #92644a);
 }
 
 .particle-div {
@@ -51,6 +51,7 @@ body::-webkit-scrollbar {
 }
 
 .landing-page {
+  background-image: url("../assets/header-background.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +95,7 @@ body::-webkit-scrollbar {
 
 .landing-page .header nav a {
   padding: 0 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-shadow: 1px 1px 1px black;
 }
 
@@ -103,12 +104,12 @@ body::-webkit-scrollbar {
 }
 
 .landing-page .header nav .active {
-  text-decoration: underline;
+  color: orange;
 }
 
 .landing-page .typewriter-div {
   color: whitesmoke;
-  font-size: 4rem;
+  font-size: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,9 +357,10 @@ body::-webkit-scrollbar {
           align-items: center;
   width: 30%;
   border-radius: 0.7vw;
-  padding: 1rem;
-  -webkit-box-shadow: 2px 2px 3px whitesmoke;
-          box-shadow: 2px 2px 3px whitesmoke;
+  padding: 2rem 2rem 1.5rem;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+  background-color: #042839;
 }
 
 .contact input {
@@ -372,7 +374,6 @@ body::-webkit-scrollbar {
 }
 
 .contact textarea {
-  font-family: 'fira sans', lato, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   border-radius: 0.7vw;
   padding: 0.7rem 0rem 0rem 1rem;
@@ -386,8 +387,7 @@ body::-webkit-scrollbar {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
   border-radius: 0.7vw;
-  border: none;
-  color: white;
+  color: gray;
   background-color: inherit;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
