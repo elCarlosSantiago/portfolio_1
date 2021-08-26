@@ -22,6 +22,11 @@ body {
     text-decoration: none;
     color: white;
   }
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .App {
@@ -34,14 +39,13 @@ body {
     #2e203f,
     #442954,
     #5d3269,
-    #763b73,
-    #8f447c,
-    #763b73,
-    #5d3269,
+    // #763b73,
+    // #8f447c,
+    // #763b73,
+    // #5d3269,
     #442954,
     #2e203f,
-    #1c1629,
-    #0a0614
+    #1c1629
   );
 }
 
@@ -117,6 +121,7 @@ body {
   margin-bottom: 0.5rem;
   opacity: 0.5;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 .fa-chevron-circle-down:hover {
   z-index: 100;
@@ -290,16 +295,23 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 0.7vw;
     border: none;
-    box-shadow: 2px 2px 2px whitesmoke;
-    color: whitesmoke;
+    color: white;
     background-color: inherit;
     transition: all 0.5s ease-in-out;
-    cursor: pointer;
+    cursor: not-allowed;
   }
 
-  button:hover {
-    transform: scale(1.02);
+  .error {
+    font-size: 1rem;
+  }
+
+  .enabled {
+    cursor: pointer;
     background-color: rgb(2, 67, 2);
     color: white;
+  }
+  .enabled:hover {
+    box-shadow: 3px 3p 3px#442954;
+    transform: scale(1.01);
   }
 }
