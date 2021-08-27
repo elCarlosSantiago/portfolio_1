@@ -131,6 +131,11 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-transition: all 0.5 ease-in-out;
+  transition: all 0.5 ease-in-out;
+}
+
 body {
   font-size: 62.5%;
   color: white;
@@ -228,7 +233,7 @@ Landing Page
   z-index: 100;
   cursor: pointer;
   position: fixed;
-  width: 97%;
+  width: 99%;
 }
 
 .landing-page .header img {
@@ -267,6 +272,15 @@ Landing Page
 
 .landing-page .typewriter-div :nth-child(2) span {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .landing-page .typewriter-div {
+    font-size: 3.5rem;
+  }
+  .landing-page .typewriter-div :nth-child(2) span {
+    font-size: 1.5rem;
+  }
 }
 
 .fa-chevron-circle-down {
@@ -321,6 +335,12 @@ About
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .about section {
+    width: 80%;
+  }
 }
 
 .about section .profile-picture {
@@ -402,7 +422,7 @@ Skills
 }
 
 .skills .skills-container {
-  width: 30%;
+  width: 32%;
 }
 
 .skills .skills-container h3 {
@@ -416,6 +436,12 @@ Skills
 .skills .skills-container p {
   text-align: center;
   margin: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .skills .skills-container {
+    width: 50%;
+  }
 }
 
 /***************************
@@ -629,5 +655,17 @@ Contact
           box-shadow: 3px 3p 3px #442954;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+@media screen and (max-width: 1440px) {
+  .contact .contact-form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact .contact-form {
+    width: 55%;
+  }
 }
 /*# sourceMappingURL=appStyles.css.map */

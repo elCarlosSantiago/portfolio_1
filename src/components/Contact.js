@@ -75,7 +75,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h2>Send me an email!</h2>
+      <h2>Contact me!</h2>
 
       <form className="contact-form" onSubmit={sendEmail}>
         <input

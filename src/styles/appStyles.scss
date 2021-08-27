@@ -126,12 +126,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+* {
+  transition: all 0.5 ease-in-out;
+}
 //Main App Styles
 body {
   font-size: 62.5%;
   color: white;
-
   h1 {
     font-size: 4rem;
   }
@@ -222,7 +223,7 @@ Landing Page
     z-index: 100;
     cursor: pointer;
     position: fixed;
-    width: 97%;
+    width: 99%;
 
     img {
       width: 55px;
@@ -251,11 +252,17 @@ Landing Page
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    // font-family: 'lato', 'fira sans';
-
     :nth-child(2) {
       span {
         font-size: 2rem;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 3.5rem;
+      :nth-child(2) {
+        span {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -294,6 +301,10 @@ About
     width: 70%;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1024px) {
+      width: 80%;
+    }
 
     .profile-picture {
       box-shadow: 4px 4px 2px black;
@@ -348,7 +359,7 @@ Skills
   justify-content: center;
 
   .skills-container {
-    width: 30%;
+    width: 32%;
     h3 {
       margin-top: 2rem;
       border-bottom: 1.8px solid whitesmoke;
@@ -359,6 +370,11 @@ Skills
     p {
       text-align: center;
       margin: 1rem;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .skills-container {
+      width: 50%;
     }
   }
 }
@@ -517,5 +533,15 @@ Contact
   .enabled:hover {
     box-shadow: 3px 3p 3px#442954;
     transform: scale(1.01);
+  }
+  @media screen and (max-width: 1440px) {
+    .contact-form {
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .contact-form {
+      width: 55%;
+    }
   }
 }
