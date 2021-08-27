@@ -3,11 +3,10 @@ import logo from '../assets/favicon.ico';
 const Header = (props) => {
   return (
     <header className="header">
-      <img alt="Save CS by Liliane Lass Erbe from the Noun Project" src={logo} />
+      <Link to="landing-page" smooth={true}>
+        <img alt="Save CS by Liliane Lass Erbe from the Noun Project" src={logo} />
+      </Link>
       <nav>
-        <Link spy={true} smooth={true} to="landing-page">
-          Home
-        </Link>
         <Link spy={true} smooth={true} to="about">
           About
         </Link>
