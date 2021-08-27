@@ -131,7 +131,6 @@ table {
 }
 //Main App Styles
 body {
-  font-size: 62.5%;
   color: white;
   h1 {
     font-size: 4rem;
@@ -197,6 +196,7 @@ Particle Styles
   }
   #tsparticles {
     width: 100vw;
+    height: 100vh;
   }
 }
 
@@ -302,10 +302,6 @@ About
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 1024px) {
-      width: 80%;
-    }
-
     .profile-picture {
       box-shadow: 4px 4px 2px black;
       border-radius: 100%;
@@ -340,6 +336,22 @@ About
       img {
         width: 35px;
         margin: 2px;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 75%;
+      padding: 1rem;
+      margin: 0.25rem;
+      text-align: center;
+      .profile-picture {
+        width: 15rem;
+      }
+      .text-and-link {
+        width: 100%;
       }
     }
   }
@@ -470,6 +482,14 @@ Projects
         width: 60%;
       }
     }
+    @media screen and (max-width: 768px) {
+      .project-description {
+        width: 55%;
+      }
+      .image-wrapper {
+        width: 45%;
+      }
+    }
   }
   .project:hover {
     transform: scale(1.01);
@@ -554,6 +574,14 @@ Contact
   @media screen and (max-width: 1024px) {
     .contact-form {
       width: 55%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .contact-form {
+      width: 70%;
+      input {
+        width: 80%;
+      }
     }
   }
 }

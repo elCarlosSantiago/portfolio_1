@@ -137,7 +137,6 @@ table {
 }
 
 body {
-  font-size: 62.5%;
   color: white;
   scrollbar-width: none;
 }
@@ -193,6 +192,7 @@ Particle Styles
 
 .particle-div #tsparticles {
   width: 100vw;
+  height: 100vh;
 }
 
 /***************************
@@ -337,12 +337,6 @@ About
           align-items: center;
 }
 
-@media screen and (max-width: 1024px) {
-  .about section {
-    width: 80%;
-  }
-}
-
 .about section .profile-picture {
   -webkit-box-shadow: 4px 4px 2px black;
           box-shadow: 4px 4px 2px black;
@@ -397,6 +391,31 @@ About
 .about section button img {
   width: 35px;
   margin: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about section {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 75%;
+    padding: 1rem;
+    margin: 0.25rem;
+    text-align: center;
+  }
+  .about section .profile-picture {
+    width: 15rem;
+  }
+  .about section .text-and-link {
+    width: 100%;
+  }
 }
 
 /***************************
@@ -571,6 +590,15 @@ Projects
   }
 }
 
+@media screen and (max-width: 768px) {
+  .projects .project .project-description {
+    width: 55%;
+  }
+  .projects .project .image-wrapper {
+    width: 45%;
+  }
+}
+
 .projects .project:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
@@ -681,6 +709,15 @@ Contact
 @media screen and (max-width: 1024px) {
   .contact .contact-form {
     width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .contact-form {
+    width: 70%;
+  }
+  .contact .contact-form input {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=appStyles.css.map */
