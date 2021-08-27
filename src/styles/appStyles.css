@@ -283,6 +283,51 @@ Landing Page
   }
 }
 
+@media screen and (max-width: 650px) {
+  .landing-page .typewriter-div {
+    font-size: 3rem;
+  }
+  .landing-page .typewriter-div :nth-child(2) span {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .landing-page .typewriter-div {
+    font-size: 2.5rem;
+  }
+  .landing-page .typewriter-div :nth-child(2) span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .landing-page .typewriter-div {
+    font-size: 2rem;
+  }
+  .landing-page .typewriter-div :nth-child(2) span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .landing-page .typewriter-div {
+    font-size: 1.5rem;
+  }
+  .landing-page .typewriter-div :nth-child(2) span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .landing-page .typewriter-div {
+    font-size: 1.25rem;
+  }
+  .landing-page .typewriter-div :nth-child(2) span {
+    font-size: 0.75rem;
+  }
+}
+
 .fa-chevron-circle-down {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -410,11 +455,28 @@ About
     margin: 0.25rem;
     text-align: center;
   }
+  .about section article {
+    margin: 0;
+  }
   .about section .profile-picture {
     width: 15rem;
   }
   .about section .text-and-link {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .about section {
+    width: 86%;
+    margin: 0.1rem;
+  }
+  .about section .profile-picture {
+    width: 10rem;
+  }
+  .about section .text-and-link h2 {
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -466,6 +528,18 @@ Skills
 @media screen and (max-width: 1024px) {
   .skills .skills-container {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills .skills-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skills .skills-container {
+    width: 80%;
   }
 }
 
@@ -715,6 +789,15 @@ Contact
 @media screen and (max-width: 768px) {
   .contact .contact-form {
     width: 70%;
+  }
+  .contact .contact-form input {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact .contact-form {
+    width: 80%;
   }
   .contact .contact-form input {
     width: 80%;

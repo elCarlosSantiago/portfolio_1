@@ -7,9 +7,6 @@ const Header = (props) => {
         <img alt="Save CS by Liliane Lass Erbe from the Noun Project" src={logo} />
       </Link>
       <nav>
-        <Link spy={true} smooth={true} to="landing-page">
-          Home
-        </Link>
         <Link spy={true} smooth={true} to="about">
           About
         </Link>
