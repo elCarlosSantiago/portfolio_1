@@ -372,6 +372,11 @@ Skills
       margin: 1rem;
     }
   }
+  @media screen and (max-width: 1440px) {
+    .skills-container {
+      width: 40%;
+    }
+  }
   @media screen and (max-width: 1024px) {
     .skills-container {
       width: 50%;
@@ -413,6 +418,7 @@ Projects
       align-items: center;
       justify-content: center;
       padding: 1.5rem 1.5rem;
+      text-align: justify;
 
       p {
         margin: 1rem 0.5rem;
@@ -438,17 +444,20 @@ Projects
 
     @media screen and (max-width: 1440px) {
       height: 38vh;
-      width: 90%;
+      width: 80%;
 
       .project-description {
+        width: 40%;
         h3 {
           margin: 0 auto;
           padding: 0;
+          padding-bottom: 0.75rem;
         }
 
         p {
           margin: 0 auto;
           padding: 0;
+          padding-bottom: 0.5rem;
         }
 
         .link-wrapper {
@@ -456,6 +465,9 @@ Projects
             margin: 0 0.5rem;
           }
         }
+      }
+      .image-wrapper {
+        width: 60%;
       }
     }
   }
