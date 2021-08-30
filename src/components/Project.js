@@ -1,3 +1,5 @@
+import MediaQuery from 'react-responsive';
+
 const Project = (props) => {
   const { data } = props;
 
@@ -5,9 +7,13 @@ const Project = (props) => {
 
   return (
     <article className="project">
-      {orientation && <div className="image-wrapper">
-        <img alt="project-1-thumbnail" src={data.profile} />
-      </div>}
+      <MediaQuery minWidth={510}>
+        {orientation && (
+          <div className="image-wrapper">
+            <img alt="project-1-thumbnail" src={data.profile} />
+          </div>
+        )}
+      </MediaQuery>
       <div className="project-description">
         <h3>{data.title}</h3>
         <p>{data.description}</p>
@@ -21,9 +27,13 @@ const Project = (props) => {
           </a>
         </div>
       </div>
-      {!orientation && <div className="image-wrapper">
-        <img alt="project-1-thumbnail" src={data.profile} />
-      </div>}
+      <MediaQuery minWidth={510}>
+        {!orientation && (
+          <div className="image-wrapper">
+            <img alt="project-1-thumbnail" src={data.profile} />
+          </div>
+        )}
+      </MediaQuery>
     </article>
   );
 };
