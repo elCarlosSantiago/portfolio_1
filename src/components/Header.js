@@ -1,10 +1,28 @@
 import { Link } from 'react-scroll';
-import logo from '../assets/favicon.ico';
+import whiteLogo from '../assets/favicon_white.ico';
+import orangeLogo from '../assets/favicon_orange.ico';
+import { useState } from 'react';
 const Header = (props) => {
+  const [logo, setLogo] = useState(orangeLogo);
+
+  const handleSetActive = () => {
+    setLogo(orangeLogo);
+  };
+
+  const handleSetInactive = () => {
+    setLogo(whiteLogo);
+  };
+
+
   return (
     <header className="header">
-      <Link to="landing-page" smooth={true}>
-        <img alt="Save CS by Liliane Lass Erbe from the Noun Project" src={logo} />
+      <Link
+        to="landing-page"
+        smooth={true}
+        spy={true}
+        onSetActive={handleSetActive}
+        onSetInactive={handleSetInactive}>
+        <img alt="CS logo" src={logo} />
       </Link>
       <nav>
         <Link spy={true} smooth={true} to="about">
