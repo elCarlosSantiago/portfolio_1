@@ -219,9 +219,9 @@ Landing Page
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 0.5rem 1.5rem 0;
   text-transform: uppercase;
   z-index: 100;
@@ -309,18 +309,20 @@ Landing Page
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: roboto;
+  font-family: 'lato heavy';
+  font-weight: bold;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .landing-page .short-bio p {
-  font-size: 1.5rem;
+  text-align: justify;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -446,13 +448,24 @@ About
           justify-content: space-between;
 }
 
+.about section .text-and-link .resume-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .about section article {
   margin-left: 1rem;
 }
 
 .about section p {
-  font-size: 1.2rem;
-  text-align: justify;
+  font-size: 1.3rem;
 }
 
 .about section button {
@@ -464,7 +477,6 @@ About
 
 .about section button img {
   width: 100px;
-  margin: 2px;
 }
 
 @media screen and (max-width: 1024px) {
