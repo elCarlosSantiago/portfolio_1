@@ -7,7 +7,7 @@ const Project = (props) => {
 
   return (
     <article className="project">
-      <MediaQuery minWidth={510}>
+      <MediaQuery minWidth={560}>
         {orientation && (
           <div className="image-wrapper">
             <img alt="project-1-thumbnail" src={data.profile} />
@@ -27,7 +27,7 @@ const Project = (props) => {
           </a>
         </div>
       </div>
-      <MediaQuery minWidth={510}>
+      <MediaQuery minWidth={560}>
         {!orientation && (
           <div className="image-wrapper">
             <img alt="project-1-thumbnail" src={data.profile} />

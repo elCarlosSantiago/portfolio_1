@@ -332,7 +332,6 @@ About
 ****************************/
 .about {
   z-index: 101;
-  max-height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -352,13 +351,6 @@ About
 
     h2 {
       font-weight: bold;
-    }
-
-    .profile-picture {
-      box-shadow: 4px 4px 2px black;
-      border-radius: 100%;
-      width: 20rem;
-      margin: 0.5rem;
     }
 
     .text-and-link {
@@ -396,6 +388,9 @@ About
       }
     }
 
+    @media screen and (max-width: 1440px) {
+      width: 60%;
+    }
     @media screen and (max-width: 1024px) {
       width: 80%;
     }
@@ -415,20 +410,22 @@ About
       }
     }
     @media screen and (max-width: 450px) {
-      width: 86%;
+      width: 90%;
       margin: 0.1rem;
 
       .text-and-link {
         h2 {
           padding: 0;
           margin: 0;
+          font-size: 2rem;
         }
         p {
-          font-size:1rem;
+          font-size: 1rem;
         }
       }
     }
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 375px) {
+      width: 95%;
     }
   }
 }
@@ -439,7 +436,6 @@ Skills
 
 .skills {
   z-index: 101;
-  max-height: 100vh;
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -456,6 +452,11 @@ Skills
       margin-top: 2rem;
       border-bottom: 1.8px solid whitesmoke;
       padding-bottom: 1rem;
+      .link-wrapper {
+        p {
+          margin: 0 0.5rem;
+        }
+      }
       text-align: center;
       width: 100%;
     }
@@ -466,23 +467,66 @@ Skills
     }
   }
   @media screen and (max-width: 1440px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
     .skills-container {
-      width: 40%;
+      width: 45%;
     }
   }
   @media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 2.4rem;
+    }
     .skills-container {
-      width: 50%;
+      width: 55%;
     }
   }
   @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 2.3rem;
+    }
     .skills-container {
-      width: 60%;
+      width: 65%;
     }
   }
   @media screen and (max-width: 450px) {
+    h2 {
+      transform: translateY(35px);
+      font-size: 2.2rem;
+    }
+    h3 {
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0.8rem;
+    }
     .skills-container {
-      width: 80%;
+      width: 85%;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    h2 {
+      font-size: 2.1rem;
+    }
+    p {
+      font-size: 0.8rem;
+      margin: 0.5rem;
+    }
+    .skills-container {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    h2 {
+      font-size: 2rem;
+    }
+    .skills-container {
+      width: 95%;
     }
   }
 }
@@ -523,7 +567,6 @@ Projects
       justify-content: center;
       padding: 1.5rem 1.5rem;
       text-align: justify;
-
       p {
         margin: 1rem 0.5rem;
       }
@@ -575,6 +618,7 @@ Projects
       }
     }
     @media screen and (max-width: 768px) {
+      width: 85%;
       .project-description {
         width: 55%;
       }
@@ -582,7 +626,8 @@ Projects
         width: 45%;
       }
     }
-    @media screen and (max-width: 510px) {
+    @media screen and (max-width: 559px) {
+      width: 90%;
       flex-direction: column;
       height: auto;
       .project-description {
@@ -629,7 +674,7 @@ Contact
     font-size: 1rem;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 75%;
     border-radius: 0.7vw;
     background-color: whitesmoke;
@@ -646,7 +691,7 @@ Contact
   }
 
   button {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     border-radius: 0.7vw;

@@ -384,7 +384,6 @@ About
 ****************************/
 .about {
   z-index: 101;
-  max-height: 100vh;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,14 +420,6 @@ About
 
 .about section h2 {
   font-weight: bold;
-}
-
-.about section .profile-picture {
-  -webkit-box-shadow: 4px 4px 2px black;
-          box-shadow: 4px 4px 2px black;
-  border-radius: 100%;
-  width: 20rem;
-  margin: 0.5rem;
 }
 
 .about section .text-and-link {
@@ -486,6 +477,12 @@ About
           transform: scale(1.15);
 }
 
+@media screen and (max-width: 1440px) {
+  .about section {
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .about section {
     width: 80%;
@@ -516,15 +513,22 @@ About
 
 @media screen and (max-width: 450px) {
   .about section {
-    width: 86%;
+    width: 90%;
     margin: 0.1rem;
   }
   .about section .text-and-link h2 {
     padding: 0;
     margin: 0;
+    font-size: 2rem;
   }
   .about section .text-and-link p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about section {
+    width: 95%;
   }
 }
 
@@ -533,7 +537,6 @@ Skills
 ****************************/
 .skills {
   z-index: 101;
-  max-height: 100vh;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -568,6 +571,10 @@ Skills
   width: 100%;
 }
 
+.skills .skills-container h3 .link-wrapper p {
+  margin: 0 0.5rem;
+}
+
 .skills .skills-container p {
   text-align: center;
   font-size: 1.2rem;
@@ -575,26 +582,72 @@ Skills
 }
 
 @media screen and (max-width: 1440px) {
+  .skills h2 {
+    font-size: 2.5rem;
+  }
+  .skills h3 {
+    font-size: 1.8rem;
+  }
   .skills .skills-container {
-    width: 40%;
+    width: 45%;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .skills h2 {
+    font-size: 2.4rem;
+  }
   .skills .skills-container {
-    width: 50%;
+    width: 55%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .skills h2 {
+    font-size: 2.3rem;
+  }
   .skills .skills-container {
-    width: 60%;
+    width: 65%;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .skills h2 {
+    -webkit-transform: translateY(35px);
+            transform: translateY(35px);
+    font-size: 2.2rem;
+  }
+  .skills h3 {
+    margin-top: 1rem;
+  }
+  .skills p {
+    font-size: 1rem;
+    margin: 0.8rem;
+  }
   .skills .skills-container {
-    width: 80%;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .skills h2 {
+    font-size: 2.1rem;
+  }
+  .skills p {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+  }
+  .skills .skills-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .skills h2 {
+    font-size: 2rem;
+  }
+  .skills .skills-container {
+    width: 95%;
   }
 }
 
@@ -721,6 +774,9 @@ Projects
 }
 
 @media screen and (max-width: 768px) {
+  .projects .project {
+    width: 85%;
+  }
   .projects .project .project-description {
     width: 55%;
   }
@@ -729,8 +785,9 @@ Projects
   }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 559px) {
   .projects .project {
+    width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -801,7 +858,7 @@ Contact
   font-size: 1rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   width: 75%;
   border-radius: 0.7vw;
   background-color: whitesmoke;
@@ -819,7 +876,7 @@ Contact
 }
 
 .contact button {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
   border-radius: 0.7vw;
