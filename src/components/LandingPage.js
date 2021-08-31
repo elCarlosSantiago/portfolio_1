@@ -1,15 +1,8 @@
 import Header from './Header';
 import NameTypewriter from './NameTypewriter';
 import { Link } from 'react-scroll';
-import { useState } from 'react';
 
 const LandingPage = () => {
-  const [isTyped, setIsTyped] = useState(false);
-
-  setTimeout(() => {
-    setIsTyped(true);
-  }, 4000);
-
   return (
     <div className="landing-page">
       <div></div>
