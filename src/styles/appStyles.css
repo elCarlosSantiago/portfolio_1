@@ -506,9 +506,6 @@ About
   .about section article {
     margin: 0;
   }
-  .about section .profile-picture {
-    width: 15rem;
-  }
   .about section .text-and-link {
     width: 100%;
     -webkit-box-align: center;
@@ -517,17 +514,17 @@ About
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
   .about section {
     width: 86%;
     margin: 0.1rem;
   }
-  .about section .profile-picture {
-    width: 10rem;
-  }
   .about section .text-and-link h2 {
     padding: 0;
     margin: 0;
+  }
+  .about section .text-and-link p {
+    font-size: 1rem;
   }
 }
 

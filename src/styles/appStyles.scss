@@ -389,7 +389,7 @@ About
 
       img {
         width: 100px;
-        transition: all 0.5s ease-in-out; 
+        transition: all 0.5s ease-in-out;
       }
       img:hover {
         transform: scale(1.15);
@@ -408,26 +408,27 @@ About
       article {
         margin: 0;
       }
-      .profile-picture {
-        width: 15rem;
-      }
+
       .text-and-link {
         width: 100%;
         align-items: center;
       }
     }
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 450px) {
       width: 86%;
       margin: 0.1rem;
-      .profile-picture {
-        width: 10rem;
-      }
+
       .text-and-link {
         h2 {
           padding: 0;
           margin: 0;
         }
+        p {
+          font-size:1rem;
+        }
       }
+    }
+    @media screen and (max-width: 440px) {
     }
   }
 }

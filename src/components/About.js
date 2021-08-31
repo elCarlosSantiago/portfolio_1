@@ -21,7 +21,7 @@ const About = () => {
             </p>
             <p>
               I'm always looking to stay busy so check back for regular updates to the
-              projects section and download my resume below.
+              projects section.
             </p>
           </article>
           <div className="resume-text">
