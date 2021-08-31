@@ -82,11 +82,10 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: lato, 'fira sans', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font: inherit;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -129,11 +128,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-* {
-  -webkit-transition: all 0.5 ease-in-out;
-  transition: all 0.5 ease-in-out;
 }
 
 body {
@@ -268,18 +262,16 @@ Landing Page
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.landing-page .typewriter-div :nth-child(2) span {
-  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'lato heavy';
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
   .landing-page .typewriter-div {
     font-size: 3.5rem;
-  }
-  .landing-page .typewriter-div :nth-child(2) span {
-    font-size: 1.5rem;
   }
 }
 
@@ -287,17 +279,11 @@ Landing Page
   .landing-page .typewriter-div {
     font-size: 3rem;
   }
-  .landing-page .typewriter-div :nth-child(2) span {
-    font-size: 1.25rem;
-  }
 }
 
 @media screen and (max-width: 554px) {
   .landing-page .typewriter-div {
     font-size: 2.5rem;
-  }
-  .landing-page .typewriter-div :nth-child(2) span {
-    font-size: 1rem;
   }
 }
 
@@ -305,17 +291,11 @@ Landing Page
   .landing-page .typewriter-div {
     font-size: 2rem;
   }
-  .landing-page .typewriter-div :nth-child(2) span {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 370px) {
   .landing-page .typewriter-div {
     font-size: 1.5rem;
-  }
-  .landing-page .typewriter-div :nth-child(2) span {
-    font-size: 1rem;
   }
 }
 
@@ -323,9 +303,64 @@ Landing Page
   .landing-page .typewriter-div {
     font-size: 1.25rem;
   }
-  .landing-page .typewriter-div :nth-child(2) span {
-    font-size: 0.75rem;
+}
+
+.landing-page .short-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: lato;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.landing-page .short-bio p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .landing-page .short-bio p {
+    font-size: 1.4rem;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .landing-page .short-bio p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .landing-page .short-bio p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .landing-page .short-bio p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .landing-page .short-bio p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .landing-page .short-bio p {
+    font-size: 0.9rem;
+  }
+}
+
+.landing-page .enabled {
+  opacity: 1;
 }
 
 .fa-chevron-circle-down {
@@ -362,6 +397,7 @@ About
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: lato;
 }
 
 .about section {
@@ -380,6 +416,10 @@ About
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about section h2 {
+  font-weight: bold;
 }
 
 .about section .profile-picture {
@@ -500,6 +540,11 @@ Skills
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Lato;
+}
+
+.skills h2 {
+  font-weight: bold;
 }
 
 .skills .skills-container {
@@ -507,6 +552,7 @@ Skills
 }
 
 .skills .skills-container h3 {
+  font-weight: bold;
   margin-top: 2rem;
   border-bottom: 1.8px solid whitesmoke;
   padding-bottom: 1rem;
@@ -561,10 +607,12 @@ Projects
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  font-family: lato;
 }
 
 .projects h2 {
   margin: 0.1rem auto 0;
+  font-weight: bold;
 }
 
 .projects .project {
@@ -694,6 +742,8 @@ Projects
 Contact
 ****************************/
 .contact {
+  font-family: lato;
+  font-weight: bold;
   z-index: 101;
   max-height: 100vh;
   min-height: 100vh;
@@ -746,10 +796,12 @@ Contact
   width: 75%;
   border-radius: 0.7vw;
   background-color: whitesmoke;
+  font-family: lato;
 }
 
 .contact textarea {
   font-size: 1rem;
+  font-family: lato;
   border-radius: 0.7vw;
   padding: 0.7rem 0rem 0rem 1rem;
   width: 90%;
@@ -784,6 +836,28 @@ Contact
           box-shadow: 3px 3p 3px #442954;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+.contact .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.contact .footer #github-footer {
+  width: 70px;
+}
+
+.contact .footer #linkedin-footer {
+  width: 44px;
 }
 
 @media screen and (max-width: 1440px) {

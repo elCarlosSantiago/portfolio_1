@@ -84,11 +84,9 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  font-family: lato, 'fira sans', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+  font: inherit;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -125,9 +123,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-* {
-  transition: all 0.5 ease-in-out;
 }
 //Main App Styles
 body {
@@ -179,8 +174,6 @@ body::-webkit-scrollbar {
     #2f719a,
     #4a75a4,
     #6478ac,
-    // #8a6b9a,
-    // #9d627e,
     #a77256,
     #9f6061,
     #92644a
@@ -252,59 +245,71 @@ Landing Page
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    :nth-child(2) {
-      span {
-        font-size: 2rem;
-      }
-    }
+    justify-content: center;
+    font-family: 'lato heavy';
+    font-weight: bold;
+
     @media screen and (max-width: 1024px) {
       font-size: 3.5rem;
-      :nth-child(2) {
-        span {
-          font-size: 1.5rem;
-        }
-      }
     }
     @media screen and (max-width: 650px) {
       font-size: 3rem;
-      :nth-child(2) {
-        span {
-          font-size: 1.25rem;
-        }
-      }
     }
     @media screen and (max-width: 554px) {
       font-size: 2.5rem;
-      :nth-child(2) {
-        span {
-          font-size: 1rem;
-        }
-      }
     }
     @media screen and (max-width: 464px) {
       font-size: 2rem;
-      :nth-child(2) {
-        span {
-          font-size: 1rem;
-        }
-      }
     }
     @media screen and (max-width: 370px) {
       font-size: 1.5rem;
-      :nth-child(2) {
-        span {
-          font-size: 1rem;
-        }
-      }
     }
     @media screen and (max-width: 280px) {
       font-size: 1.25rem;
-      :nth-child(2) {
-        span {
-          font-size: 0.75rem;
-        }
+    }
+  }
+  .short-bio {
+    display: flex;
+    font-family: lato;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    p {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 1024px) {
+      p {
+        font-size: 1.4rem;
       }
     }
+    @media screen and (max-width: 650px) {
+      p {
+        font-size: 1.3rem;
+      }
+    }
+    @media screen and (max-width: 554px) {
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    @media screen and (max-width: 464px) {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+    @media screen and (max-width: 370px) {
+      p {
+        font-size: 1rem;
+      }
+    }
+    @media screen and (max-width: 280px) {
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .enabled {
+    opacity: 1;
   }
 }
 //Arrow Icon
@@ -331,6 +336,7 @@ About
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  font-family: lato;
 
   section {
     display: flex;
@@ -341,6 +347,10 @@ About
     width: 70%;
     justify-content: space-between;
     align-items: center;
+    
+    h2{
+      font-weight: bold;
+    }
 
     .profile-picture {
       box-shadow: 4px 4px 2px black;
@@ -425,10 +435,14 @@ Skills
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-
+  font-family: Lato;
+  h2 {
+    font-weight: bold;
+  }
   .skills-container {
     width: 32%;
     h3 {
+      font-weight: bold;
       margin-top: 2rem;
       border-bottom: 1.8px solid whitesmoke;
       padding-bottom: 1rem;
@@ -473,9 +487,11 @@ Projects
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
+  font-family: lato;
 
   h2 {
     margin: 0.1rem auto 0;
+    font-weight: bold;
   }
   .project {
     margin: 0 auto;
@@ -573,6 +589,8 @@ Contact
 ****************************/
 
 .contact {
+  font-family: lato;
+  font-weight: bold;
   z-index: 101;
   max-height: 100vh;
   min-height: 100vh;
@@ -604,9 +622,11 @@ Contact
     width: 75%;
     border-radius: 0.7vw;
     background-color: whitesmoke;
+    font-family: lato;
   }
   textarea {
     font-size: 1rem;
+    font-family: lato;
     border-radius: 0.7vw;
     padding: 0.7rem 0rem 0rem 1rem;
     width: 90%;
@@ -637,6 +657,20 @@ Contact
   .enabled:hover {
     box-shadow: 3px 3p 3px#442954;
     transform: scale(1.01);
+  }
+
+  .footer {
+    display: flex;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    #github-footer {
+      width: 70px;
+    }
+    #linkedin-footer {
+      width: 44px;
+    }
   }
   @media screen and (max-width: 1440px) {
     .contact-form {

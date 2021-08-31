@@ -1,7 +1,7 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 150,
+      value: 70,
       density: {
         enable: true,
         value_area: 700,
@@ -26,7 +26,7 @@ const particlesConfig = {
       },
     },
     opacity: {
-      value: 0.5,
+      value: 0.3,
       random: false,
       anim: {
         enable: false,
@@ -46,8 +46,8 @@ const particlesConfig = {
       },
     },
     line_linked: {
-      enable: true,
-      distance: 140,
+      enable: false,
+      distance: 10,
       color: '#ffffff',
       opacity: 0.4,
       width: 1,
@@ -76,7 +76,7 @@ const particlesConfig = {
       },
       onclick: {
         enable: false,
-        mode: 'grapushb',
+        mode: 'grab',
       },
       resize: true,
     },
@@ -95,7 +95,7 @@ const particlesConfig = {
         speed: 3,
       },
       repulse: {
-        distance: 80,
+        distance: 150,
         duration: 0.4,
       },
       push: {

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 
 import * as yup from 'yup';
 import contactFormSchema from '../utils/contactFormSchema';
+import Footer from './Footer';
 
 const initialValues = {
   from_name: '',
@@ -75,7 +76,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h2>Contact me!</h2>
+      <h2>Contact me</h2>
 
       <form className="contact-form" onSubmit={sendEmail}>
         <input
@@ -107,6 +108,7 @@ const Contact = () => {
           Send Message
         </button>
       </form>
+      <Footer />
     </div>
   );
 };

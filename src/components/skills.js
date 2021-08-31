@@ -9,7 +9,7 @@ const Skills = () => {
         <p>Node.js Express SQL PostgreSQL JSON</p>
         <h3>Technologies & Extras</h3>
         <p>Python SQLite Postman Git RESTful APIs Jest Cypress</p>
-        <p>Styled Components Docker S3 AutoCAD MATLAB </p>
+        <p>Styled Components Sass Docker S3 AutoCAD MATLAB </p>
       </div>
     </div>
   );
