@@ -1,12 +1,10 @@
-import saveIcon from '../assets/favicon.ico';
-import profilePic from '../assets/profile.png';
+import resumeIcon from '../assets/resume_icon.png';
 import resume from '../assets/Carlos_Nevett_Resume.pdf';
 
 const About = () => {
   return (
     <div className="about">
       <section>
-        <img alt="profile" src={profilePic} className='profile-picture'/>
         <div className="text-and-link">
           <article>
             <h2>About me</h2>
@@ -28,8 +26,7 @@ const About = () => {
 
           <a href={resume} download>
             <button>
-              <span>Download my resume</span>
-              <img alt="Save CS by Liliane Lass Erbe from the Noun Project" src={saveIcon} />
+              <img alt="resume icon" src={resumeIcon} />
             </button>
           </a>
         </div>

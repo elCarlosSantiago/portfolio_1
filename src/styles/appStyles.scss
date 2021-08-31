@@ -233,7 +233,7 @@ Landing Page
         text-decoration: underline;
       }
       .active {
-        color: orange;
+        color: #ffa500;
       }
     }
   }
@@ -270,7 +270,7 @@ Landing Page
   }
   .short-bio {
     display: flex;
-    font-family: lato;
+    font-family: roboto;
     flex-direction: column;
     opacity: 0;
     transition: all 1s ease-in-out;
@@ -340,12 +340,12 @@ About
 
   section {
     display: flex;
-    border: 4px solid whitesmoke;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px black;
+    border-left: 4px solid whitesmoke;
+    border-top: 4px solid whitesmoke;
     padding: 1.2rem;
-    width: 70%;
-    justify-content: space-between;
+    padding-bottom: 4rem;
+    width: 40%;
+    justify-content: center;
     align-items: center;
 
     h2 {
@@ -361,9 +361,9 @@ About
 
     .text-and-link {
       display: flex;
-      width: 70%;
+      width: 88%;
       flex-flow: column nowrap;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-between;
     }
     article {
@@ -375,16 +375,13 @@ About
     }
 
     button {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 10px;
-      margin: 1.25rem auto 0.5rem;
-      padding: 0.5rem;
-      background-color: whitesmoke;
+      background: none;
+      border: none;
       cursor: pointer;
+      font-family: lato;
+
       img {
-        width: 35px;
+        width: 100px;
         margin: 2px;
       }
     }
