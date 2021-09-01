@@ -19,16 +19,19 @@ const About = () => {
               I love to build full-stack web applications and am passionate about software
               development.
             </p>
-            <p>
-              I'm always looking to stay busy so check back for regular updates to the
-              projects section.
-            </p>
+            <p>Click below for my resume and the code for this site!</p>
           </article>
           <div className="resume-text">
             <a href={resume} download>
               <button>
                 <img alt="resume icon" src={resumeIcon} />
               </button>
+            </a>
+            <a
+              href={'https://github.com/elCarlosSantiago/portfolio_1'}
+              target="_blank"
+              rel="noreferrer">
+              <i class="fas fa-code"></i>
             </a>
           </div>
         </div>
