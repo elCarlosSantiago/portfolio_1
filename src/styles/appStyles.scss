@@ -88,7 +88,7 @@ video {
   box-sizing: border-box;
   font: inherit;
 }
-/* HTML5 display-role reset for older browsers */
+//HTML5 display-role reset for older browsers
 article,
 aside,
 details,
@@ -125,7 +125,7 @@ table {
   border-spacing: 0;
 }
 
-//Variables
+//!!Variables
 $largeLaptop: 1440px;
 $smallLaptop: 1024px;
 $tablet: 768px;
@@ -134,6 +134,7 @@ $largePhone: 450px;
 $phone: 380px;
 $smallPhone: 350px;
 $foldPhone: 280px;
+
 //Main App Styles
 body {
   color: white;
@@ -242,9 +243,9 @@ body::-webkit-scrollbar {
     #92644a
   );
 }
-/***************************
+/*******************************************************************************************
 Particle Styles
-****************************/
+********************************************************************************************/
 .particle-div {
   position: absolute;
   particle-background {
@@ -256,9 +257,9 @@ Particle Styles
   }
 }
 
-/***************************
+/*******************************************************************************************
 Landing Page
-****************************/
+********************************************************************************************/
 .landing-page {
   background-image: url('../assets/header-background.jpg');
   display: flex;
@@ -269,7 +270,6 @@ Landing Page
   min-height: 100vh;
   z-index: 100;
 
-  //Header styling
   .header {
     display: flex;
     justify-content: space-between;
@@ -332,8 +332,8 @@ Landing Page
       }
     }
   }
-  //Name Typewriter
 
+  //Name Typewriter
   .typewriter-div {
     color: whitesmoke;
     font-size: 5rem;
@@ -367,7 +367,7 @@ Landing Page
     opacity: 1;
   }
 }
-//Arrow Icon
+//Landing page down arrow 
 .fa-chevron-circle-down {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -380,9 +380,9 @@ Landing Page
   opacity: 1;
 }
 
-/***************************
+/*******************************************************************************************
 About
-****************************/
+*********************************************************************************************/
 .about {
   z-index: 101;
   min-height: 100vh;
@@ -479,9 +479,9 @@ About
   }
 }
 
-/***************************
+/*******************************************************************************************
 Skills
-****************************/
+********************************************************************************************/
 
 .skills {
   z-index: 101;
@@ -561,9 +561,9 @@ Skills
   }
 }
 
-/***************************
+/*******************************************************************************************
 Projects
-****************************/
+********************************************************************************************/
 
 .projects {
   z-index: 101;
@@ -671,9 +671,9 @@ Projects
   }
 }
 
-/***************************
+/*******************************************************************************************
 Contact
-****************************/
+********************************************************************************************/
 
 .contact {
   font-family: lato;
