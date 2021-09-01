@@ -145,15 +145,87 @@ body h2 {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1440px) {
+  body h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body h2 {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body h2 {
+    font-size: 2rem;
+  }
+}
+
 body h3 {
   font-size: 1.8rem;
   padding: 0.5rem 0rem;
 }
 
 body p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin: 0.25rem auto;
   padding: 0.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+  body p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  body p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  body p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  body p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  body p {
+    font-size: 0.9rem;
+  }
 }
 
 body a {
@@ -219,9 +291,9 @@ Landing Page
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem 1.5rem 0;
   text-transform: uppercase;
   z-index: 100;
@@ -232,6 +304,24 @@ Landing Page
 
 .landing-page .header img {
   width: 55px;
+}
+
+@media screen and (max-width: 450px) {
+  .landing-page .header img {
+    width: 47.5px;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .landing-page .header img {
+    width: 45px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .landing-page .header img {
+    width: 40px;
+  }
 }
 
 .landing-page .header nav a {
@@ -247,6 +337,44 @@ Landing Page
 
 .landing-page .header nav .active {
   color: #ffa500;
+}
+
+@media screen and (max-width: 554px) {
+  .landing-page .header nav a {
+    font-size: 0.9rem;
+    padding: 0 0.75rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .landing-page .header nav a {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing-page .header nav a {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .landing-page .header nav a {
+    font-size: 0.7rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .landing-page .header nav a {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .landing-page .header nav a {
+    font-size: 0.55rem;
+  }
 }
 
 .landing-page .typewriter-div {
@@ -302,62 +430,6 @@ Landing Page
 @media screen and (max-width: 280px) {
   .landing-page .typewriter-div {
     font-size: 1.25rem;
-  }
-}
-
-.landing-page .short-bio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: 'lato heavy';
-  font-weight: bold;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  opacity: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.landing-page .short-bio p {
-  text-align: justify;
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .landing-page .short-bio p {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .landing-page .short-bio p {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 554px) {
-  .landing-page .short-bio p {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 464px) {
-  .landing-page .short-bio p {
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .landing-page .short-bio p {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .landing-page .short-bio p {
-    font-size: 0.9rem;
   }
 }
 
@@ -455,10 +527,6 @@ About
   margin-left: 1rem;
 }
 
-.about section p {
-  font-size: 1.3rem;
-}
-
 .about section button {
   background: none;
   border: none;
@@ -519,7 +587,6 @@ About
   .about section .text-and-link h2 {
     padding: 0;
     margin: 0;
-    font-size: 2rem;
   }
   .about section .text-and-link p {
     font-size: 1rem;
@@ -577,14 +644,10 @@ Skills
 
 .skills .skills-container p {
   text-align: center;
-  font-size: 1.2rem;
   margin: 1rem;
 }
 
 @media screen and (max-width: 1440px) {
-  .skills h2 {
-    font-size: 2.5rem;
-  }
   .skills h3 {
     font-size: 1.8rem;
   }
@@ -594,18 +657,12 @@ Skills
 }
 
 @media screen and (max-width: 1024px) {
-  .skills h2 {
-    font-size: 2.4rem;
-  }
   .skills .skills-container {
     width: 55%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .skills h2 {
-    font-size: 2.3rem;
-  }
   .skills .skills-container {
     width: 65%;
   }
@@ -615,13 +672,11 @@ Skills
   .skills h2 {
     -webkit-transform: translateY(35px);
             transform: translateY(35px);
-    font-size: 2.2rem;
   }
   .skills h3 {
     margin-top: 1rem;
   }
   .skills p {
-    font-size: 1rem;
     margin: 0.8rem;
   }
   .skills .skills-container {
@@ -630,11 +685,7 @@ Skills
 }
 
 @media screen and (max-width: 380px) {
-  .skills h2 {
-    font-size: 2.1rem;
-  }
   .skills p {
-    font-size: 0.8rem;
     margin: 0.5rem;
   }
   .skills .skills-container {
@@ -643,9 +694,6 @@ Skills
 }
 
 @media screen and (max-width: 350px) {
-  .skills h2 {
-    font-size: 2rem;
-  }
   .skills .skills-container {
     width: 95%;
   }
@@ -675,6 +723,8 @@ Projects
 .projects h2 {
   margin: 0.1rem auto 0;
   font-weight: bold;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
 }
 
 .projects .project {
@@ -830,6 +880,8 @@ Contact
 
 .contact h2 {
   margin: 0 auto;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
 }
 
 .contact .contact-form {
@@ -856,7 +908,7 @@ Contact
 
 .contact input {
   font-size: 1rem;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
   width: 75%;
@@ -943,16 +995,37 @@ Contact
     width: 70%;
   }
   .contact .contact-form input {
-    width: 80%;
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 450px) {
   .contact .contact-form {
     width: 80%;
+    padding: 1rem 1.5rem;
   }
   .contact .contact-form input {
     width: 80%;
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+  }
+  .contact .contact-form textarea {
+    height: 150px;
+  }
+  .contact .footer #github-footer {
+    width: 60px;
+  }
+  .contact .footer #linkedin-footer {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact .footer #github-footer {
+    width: 50px;
+  }
+  .contact .footer #linkedin-footer {
+    width: 35px;
   }
 }
 /*# sourceMappingURL=appStyles.css.map */

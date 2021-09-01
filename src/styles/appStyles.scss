@@ -134,6 +134,25 @@ body {
     font-size: 3rem;
     padding: 0.5rem 0 0.5rem;
     margin: 0 auto;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 2.4rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 2.3rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 2.2rem;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 2.1rem;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 2rem;
+    }
   }
   h3 {
     font-size: 1.8rem;
@@ -141,9 +160,28 @@ body {
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin: 0.25rem auto;
     padding: 0.25rem;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1.4rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+    @media screen and (max-width: 554px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 464px) {
+      font-size: 1.1rem;
+    }
+    @media screen and (max-width: 370px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 280px) {
+      font-size: 0.9rem;
+    }
   }
   a {
     font-size: 1rem;
@@ -210,7 +248,7 @@ Landing Page
   .header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 0.5rem 1.5rem 0;
     text-transform: uppercase;
     z-index: 100;
@@ -220,6 +258,16 @@ Landing Page
 
     img {
       width: 55px;
+
+      @media screen and(max-width: 450px) {
+        width: 47.5px;
+      }
+      @media screen and(max-width: 373px) {
+        width: 45px;
+      }
+      @media screen and(max-width: 310px) {
+        width: 40px;
+      }
     }
 
     nav {
@@ -234,6 +282,39 @@ Landing Page
       }
       .active {
         color: #ffa500;
+      }
+
+      @media screen and (max-width: 554px) {
+        a {
+          font-size: 0.9rem;
+          padding: 0 0.75rem;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        a {
+          font-size: 0.85rem;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        a {
+          font-size: 0.75rem;
+        }
+      }
+      @media screen and (max-width: 373px) {
+        a {
+          font-size: 0.7rem;
+          padding: 0 0.5rem;
+        }
+      }
+      @media screen and (max-width: 360px) {
+        a {
+          font-size: 0.6rem;
+        }
+      }
+      @media screen and (max-width: 350px) {
+        a {
+          font-size: 0.55rem;
+        }
       }
     }
   }
@@ -266,48 +347,6 @@ Landing Page
     }
     @media screen and (max-width: 280px) {
       font-size: 1.25rem;
-    }
-  }
-  .short-bio {
-    display: flex;
-    font-family: 'lato heavy';
-    font-weight: bold;
-    flex-direction: column;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    p {
-      text-align: justify;
-      font-size: 2rem;
-    }
-    @media screen and (max-width: 1024px) {
-      p {
-        font-size: 1.4rem;
-      }
-    }
-    @media screen and (max-width: 650px) {
-      p {
-        font-size: 1.3rem;
-      }
-    }
-    @media screen and (max-width: 554px) {
-      p {
-        font-size: 1.2rem;
-      }
-    }
-    @media screen and (max-width: 464px) {
-      p {
-        font-size: 1.1rem;
-      }
-    }
-    @media screen and (max-width: 370px) {
-      p {
-        font-size: 1rem;
-      }
-    }
-    @media screen and (max-width: 280px) {
-      p {
-        font-size: 0.9rem;
-      }
     }
   }
   .enabled {
@@ -369,9 +408,6 @@ About
     article {
       margin-left: 1rem;
     }
-    p {
-      font-size: 1.3rem;
-    }
 
     button {
       background: none;
@@ -417,7 +453,6 @@ About
         h2 {
           padding: 0;
           margin: 0;
-          font-size: 2rem;
         }
         p {
           font-size: 1rem;
@@ -462,14 +497,10 @@ Skills
     }
     p {
       text-align: center;
-      font-size: 1.2rem;
       margin: 1rem;
     }
   }
   @media screen and (max-width: 1440px) {
-    h2 {
-      font-size: 2.5rem;
-    }
     h3 {
       font-size: 1.8rem;
     }
@@ -478,17 +509,11 @@ Skills
     }
   }
   @media screen and (max-width: 1024px) {
-    h2 {
-      font-size: 2.4rem;
-    }
     .skills-container {
       width: 55%;
     }
   }
   @media screen and (max-width: 768px) {
-    h2 {
-      font-size: 2.3rem;
-    }
     .skills-container {
       width: 65%;
     }
@@ -496,13 +521,11 @@ Skills
   @media screen and (max-width: 450px) {
     h2 {
       transform: translateY(35px);
-      font-size: 2.2rem;
     }
     h3 {
       margin-top: 1rem;
     }
     p {
-      font-size: 1rem;
       margin: 0.8rem;
     }
     .skills-container {
@@ -510,11 +533,7 @@ Skills
     }
   }
   @media screen and (max-width: 380px) {
-    h2 {
-      font-size: 2.1rem;
-    }
     p {
-      font-size: 0.8rem;
       margin: 0.5rem;
     }
     .skills-container {
@@ -522,9 +541,6 @@ Skills
     }
   }
   @media screen and (max-width: 350px) {
-    h2 {
-      font-size: 2rem;
-    }
     .skills-container {
       width: 95%;
     }
@@ -547,6 +563,7 @@ Projects
   h2 {
     margin: 0.1rem auto 0;
     font-weight: bold;
+    transform: translateY(15px);
   }
   .project {
     margin: 0 auto;
@@ -657,6 +674,7 @@ Contact
 
   h2 {
     margin: 0 auto;
+    transform: translateY(15px);
   }
 
   .contact-form {
@@ -672,7 +690,7 @@ Contact
   }
   input {
     font-size: 1rem;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
     text-align: center;
     margin-bottom: 1.5rem;
     width: 75%;
@@ -742,15 +760,40 @@ Contact
     .contact-form {
       width: 70%;
       input {
-        width: 80%;
+        width: 70%;
       }
     }
   }
   @media screen and (max-width: 450px) {
     .contact-form {
       width: 80%;
+      padding: 1rem 1.5rem;
       input {
         width: 80%;
+        margin-bottom: 1rem;
+        padding: 0.25rem;
+      }
+      textarea {
+        height: 150px;
+      }
+    }
+    .footer {
+      #github-footer {
+        width: 60px;
+      }
+      #linkedin-footer {
+        width: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .footer {
+      #github-footer {
+        width: 50px;
+      }
+      #linkedin-footer {
+        width: 35px;
       }
     }
   }
