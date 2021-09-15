@@ -166,10 +166,10 @@ body {
       font-size: 2.2rem;
     }
     @media screen and (max-width: $phone) {
-      font-size: 2.1rem;
+      font-size: 1.8rem;
     }
     @media screen and (max-width: $smallPhone) {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
   }
   h3 {
@@ -389,7 +389,6 @@ Landing Page
 About
 *********************************************************************************************/
 .about {
-  z-index: 101;
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -494,7 +493,14 @@ About
     }
     @media screen and (max-width: $phone) {
       width: 95%;
+      padding-top: 0.1rem;
       .text-and-link {
+        article {
+          h2 {
+            padding: 0;
+            margin: 0;
+          }
+        }
         .resume-text {
           button {
             img {
@@ -535,7 +541,6 @@ Skills
 ********************************************************************************************/
 
 .skills {
-  z-index: 101;
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -609,7 +614,6 @@ Projects
 ********************************************************************************************/
 
 .projects {
-  z-index: 101;
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
@@ -619,7 +623,7 @@ Projects
   padding-bottom: 3rem;
 
   h2 {
-    margin: 0.5rem auto 0;
+    margin: 1rem auto 0;
     font-weight: bold;
     transform: translateY(15px);
     text-align: center;

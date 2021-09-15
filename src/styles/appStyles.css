@@ -173,13 +173,13 @@ body h2 {
 
 @media screen and (max-width: 380px) {
   body h2 {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   body h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -505,7 +505,6 @@ Landing Page
 About
 *********************************************************************************************/
 .about {
-  z-index: 101;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -663,6 +662,11 @@ About
 @media screen and (max-width: 380px) {
   .about section {
     width: 95%;
+    padding-top: 0.1rem;
+  }
+  .about section .text-and-link article h2 {
+    padding: 0;
+    margin: 0;
   }
   .about section .text-and-link .resume-text button img {
     width: 80px;
@@ -691,7 +695,6 @@ About
 Skills
 ********************************************************************************************/
 .skills {
-  z-index: 101;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,7 +787,6 @@ Skills
 Projects
 ********************************************************************************************/
 .projects {
-  z-index: 101;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -803,7 +805,7 @@ Projects
 }
 
 .projects h2 {
-  margin: 0.5rem auto 0;
+  margin: 1rem auto 0;
   font-weight: bold;
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
