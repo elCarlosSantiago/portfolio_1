@@ -551,6 +551,7 @@ Skills
     font-weight: bold;
   }
   .skills-container {
+    margin-top: 2rem;
     width: 32%;
     h3 {
       font-weight: bold;
@@ -623,7 +624,7 @@ Projects
   padding-bottom: 3rem;
 
   h2 {
-    margin: 1rem auto 0;
+    margin: 1rem auto;
     font-weight: bold;
     transform: translateY(15px);
     text-align: center;
@@ -806,15 +807,17 @@ Contact
 
   .footer {
     display: flex;
-    width: 5%;
-    justify-content: center;
+    min-width: 200px;
+    width: 10%;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+
     #github-footer {
-      width: 70px;
+      width: 50px;
     }
     #linkedin-footer {
-      width: 44px;
+      width: 45px;
     }
   }
   @media screen and (max-width: $largeLaptop) {
@@ -850,10 +853,10 @@ Contact
     }
     .footer {
       #github-footer {
-        width: 60px;
+        width: 46px;
       }
       #linkedin-footer {
-        width: 40px;
+        width: 41px;
       }
     }
   }
@@ -861,10 +864,10 @@ Contact
   @media screen and (max-width: $phone) {
     .footer {
       #github-footer {
-        width: 50px;
+        width: 41px;
       }
       #linkedin-footer {
-        width: 35px;
+        width: 36px;
       }
     }
   }

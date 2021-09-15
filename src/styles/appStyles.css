@@ -717,6 +717,7 @@ Skills
 }
 
 .skills .skills-container {
+  margin-top: 2rem;
   width: 32%;
 }
 
@@ -805,7 +806,7 @@ Projects
 }
 
 .projects h2 {
-  margin: 1rem auto 0;
+  margin: 1rem auto;
   font-weight: bold;
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
@@ -1053,10 +1054,10 @@ Contact
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  min-width: 200px;
+  width: 10%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1064,11 +1065,11 @@ Contact
 }
 
 .contact .footer #github-footer {
-  width: 70px;
+  width: 50px;
 }
 
 .contact .footer #linkedin-footer {
-  width: 44px;
+  width: 45px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -1106,19 +1107,19 @@ Contact
     height: 150px;
   }
   .contact .footer #github-footer {
-    width: 60px;
+    width: 46px;
   }
   .contact .footer #linkedin-footer {
-    width: 40px;
+    width: 41px;
   }
 }
 
 @media screen and (max-width: 380px) {
   .contact .footer #github-footer {
-    width: 50px;
+    width: 41px;
   }
   .contact .footer #linkedin-footer {
-    width: 35px;
+    width: 36px;
   }
 }
 /*# sourceMappingURL=appStyles.css.map */

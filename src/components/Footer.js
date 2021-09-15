@@ -1,5 +1,5 @@
-import linkedinLogo from '../assets/linkedin.png';
-import gitCat from '../assets/gitCat.png';
+import linkedinLogo from '../assets/linkedin_white.png';
+import gitCat from '../assets/gitCat_white.png';
 const Footer = () => {
   return (
     <div className="footer">
