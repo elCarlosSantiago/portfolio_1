@@ -1,7 +1,7 @@
 const particlesConfig = {
   particles: {
     number: {
-      value: 80,
+      value: 150,
       density: {
         enable: true,
         value_area: 700,
@@ -36,7 +36,7 @@ const particlesConfig = {
       },
     },
     size: {
-      value: 4,
+      value: 5,
       random: true,
       anim: {
         enable: true,
@@ -95,7 +95,7 @@ const particlesConfig = {
         speed: 3,
       },
       repulse: {
-        distance: 150,
+        distance: 140,
         duration: 0.4,
       },
       push: {

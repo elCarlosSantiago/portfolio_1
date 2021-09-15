@@ -14,7 +14,7 @@ export const project2 = {
   profile: foodTruckTracker,
   title: 'Food Truck Tracker',
   description:
-    'A windows-95 style Food Truck Tracker application. Built for users and food truck owners!',
+    'A windows-95 style Food Truck Tracker application. Built for customers and food truck owners!',
   repoLink: 'https://github.com/FoodTruckr/front-end',
   deployLink: 'https://front-end-kohl-delta.vercel.app/',
 };
