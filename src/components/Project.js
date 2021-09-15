@@ -2,12 +2,12 @@ import MediaQuery from 'react-responsive';
 
 const Project = (props) => {
   const { data } = props;
-
+  const smallTablet = 554;
   const orientation = data.project_id % 2 === 0 ? true : false;
 
   return (
     <article className="project">
-      <MediaQuery minWidth={560}>
+      <MediaQuery minWidth={smallTablet}>
         {orientation && (
           <div className="image-wrapper">
             <img alt="project-1-thumbnail" src={data.profile} />
@@ -19,15 +19,15 @@ const Project = (props) => {
         <p>{data.description}</p>
         <div className="link-wrapper">
           <a target="_blank" rel="noreferrer" href={data.repoLink}>
-            Visit Repository
+            Repository
           </a>
           <p>|</p>
           <a target="_blank" rel="noreferrer" href={data.deployLink}>
-            Visit Deployment
+            Deployment
           </a>
         </div>
       </div>
-      <MediaQuery minWidth={560}>
+      <MediaQuery minWidth={smallTablet}>
         {!orientation && (
           <div className="image-wrapper">
             <img alt="project-1-thumbnail" src={data.profile} />

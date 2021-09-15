@@ -78,6 +78,8 @@ summary,
 time,
 mark,
 audio,
+textarea,
+input,
 video {
   margin: 0;
   padding: 0;
@@ -142,6 +144,7 @@ body h2 {
   font-size: 3rem;
   padding: 0.5rem 0 0.5rem;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1440px) {
@@ -182,7 +185,42 @@ body h2 {
 
 body h3 {
   font-size: 1.8rem;
-  padding: 0.5rem 0rem;
+}
+
+@media screen and (max-width: 1024px) {
+  body h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  body h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  body h3 {
+    font-size: 1.2rem;
+  }
 }
 
 body p {
@@ -228,6 +266,7 @@ body p {
 body a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -273,8 +312,7 @@ body::-webkit-scrollbar {
 .App {
   position: relative;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#042839), color-stop(#042839), color-stop(#042839), color-stop(#042839), color-stop(#042839), color-stop(#07384d), color-stop(#0b4962), color-stop(#0d5b77), color-stop(#0f6d8d), color-stop(#2f719a), color-stop(#4a75a4), color-stop(#6478ac), color-stop(#a77256), color-stop(#9f6061), to(#92644a));
-  background-image: linear-gradient(to bottom, #042839, #042839, #042839, #042839, #042839, #07384d, #0b4962, #0d5b77, #0f6d8d, #2f719a, #4a75a4, #6478ac, #a77256, #9f6061, #92644a);
+  font-family: 'inconsolata', 'open sans', Roboto, monospace;
 }
 
 /*******************************************************************************************
@@ -298,6 +336,7 @@ Landing Page
 ********************************************************************************************/
 .landing-page {
   background-image: url("../assets/header-background.jpg");
+  background-color: #d8c3a5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +350,6 @@ Landing Page
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-height: 100vh;
   min-height: 100vh;
   z-index: 100;
 }
@@ -351,43 +389,42 @@ Landing Page
 }
 
 .landing-page .header nav a {
-  font-family: monospace;
   padding: 0 1rem;
-  font-size: 1rem;
-  text-shadow: 1px 1px 1px black;
+  font-size: 1.1rem;
 }
 
 .landing-page .header nav a:hover {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .landing-page .header nav .active {
-  color: #ffa500;
+  color: #8e8d8a;
 }
 
 @media screen and (max-width: 554px) {
   .landing-page .header nav a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0 0.75rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .landing-page .header nav a {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 380px) {
   .landing-page .header nav a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 0 0.5rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   .landing-page .header nav a {
-    font-size: 0.55rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -407,7 +444,6 @@ Landing Page
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: 'lato heavy';
   font-weight: bold;
 }
 
@@ -484,15 +520,15 @@ About
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: lato;
+  background-color: #eae7dc;
 }
 
 .about section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-left: 4px solid whitesmoke;
-  border-top: 4px solid whitesmoke;
+  border-left: 4px solid #d8c3a5;
+  border-top: 4px solid #d8c3a5;
   padding: 1.2rem;
   padding-bottom: 4rem;
   width: 40%;
@@ -506,6 +542,7 @@ About
 
 .about section h2 {
   font-weight: bold;
+  color: #8e8d8a;
 }
 
 .about section .text-and-link {
@@ -539,6 +576,20 @@ About
 
 .about section .text-and-link .resume-text button {
   padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.about section .text-and-link .resume-text button img {
+  width: 100px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.about section .text-and-link .resume-text button img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .about section .text-and-link .resume-text .fa-code {
@@ -558,24 +609,7 @@ About
 
 .about section article p {
   padding: 0.2rem;
-}
-
-.about section button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: lato;
-}
-
-.about section button img {
-  width: 100px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.about section button img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  color: #8e8d8a;
 }
 
 @media screen and (max-width: 1440px) {
@@ -617,11 +651,11 @@ About
     width: 90%;
     margin: 0.1rem;
   }
-  .about section .text-and-link h2 {
+  .about section .text-and-link article h2 {
     padding: 0;
     margin: 0;
   }
-  .about section .text-and-link p {
+  .about section .text-and-link article p {
     font-size: 1rem;
   }
 }
@@ -629,6 +663,27 @@ About
 @media screen and (max-width: 380px) {
   .about section {
     width: 95%;
+  }
+  .about section .text-and-link .resume-text button img {
+    width: 80px;
+  }
+  .about section .text-and-link .resume-text .fa-code {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about section {
+    width: 98%;
+  }
+  .about section .text-and-link article p {
+    font-size: 0.85rem;
+  }
+  .about section .text-and-link .resume-text button img {
+    width: 60px;
+  }
+  .about section .text-and-link .resume-text .fa-code {
+    font-size: 2rem;
   }
 }
 
@@ -651,7 +706,7 @@ Skills
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Lato;
+  background-color: #d8c3a5;
 }
 
 .skills h2 {
@@ -671,19 +726,12 @@ Skills
   width: 100%;
 }
 
-.skills .skills-container h3 .link-wrapper p {
-  margin: 0 0.5rem;
-}
-
 .skills .skills-container p {
   text-align: center;
   margin: 1rem;
 }
 
 @media screen and (max-width: 1440px) {
-  .skills h3 {
-    font-size: 1.8rem;
-  }
   .skills .skills-container {
     width: 45%;
   }
@@ -750,20 +798,21 @@ Projects
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-family: lato;
+  background-color: #eae7dc;
+  padding-bottom: 3rem;
 }
 
 .projects h2 {
-  margin: 0.1rem auto 0;
+  margin: 0.5rem auto 0;
   font-weight: bold;
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
+  text-align: center;
+  color: #8e8d8a;
 }
 
 .projects .project {
   margin: 0 auto;
-  -webkit-box-shadow: 10px 10px 10px black;
-          box-shadow: 10px 10px 10px black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,15 +820,19 @@ Projects
       justify-content: space-around;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 70%;
-  height: 35vh;
+  max-width: 70%;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+  min-height: 20vh;
+  max-height: 40vh;
+  -webkit-box-shadow: 5px 5px 5px #8e8d8a;
+          box-shadow: 5px 5px 5px #8e8d8a;
+  margin: 1.5rem auto;
 }
 
 .projects .project .project-description {
-  background-color: #1c1629;
-  width: 35%;
+  background-color: #d8c3a5;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -797,8 +850,13 @@ Projects
   text-align: justify;
 }
 
+.projects .project .project-description h3 {
+  text-align: center;
+}
+
 .projects .project .project-description p {
-  margin: 1rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+  text-align: center;
 }
 
 .projects .project .project-description .link-wrapper {
@@ -815,6 +873,10 @@ Projects
       flex-wrap: nowrap;
 }
 
+.projects .project .project-description .link-wrapper a:hover {
+  color: #8e8d8a;
+}
+
 .projects .project .image-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -822,7 +884,7 @@ Projects
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 65%;
+  width: 60%;
 }
 
 .projects .project img {
@@ -832,15 +894,13 @@ Projects
 
 @media screen and (max-width: 1440px) {
   .projects .project {
-    height: 38vh;
+    max-height: 50vh;
     width: 80%;
   }
   .projects .project .project-description {
     width: 40%;
   }
   .projects .project .project-description h3 {
-    margin: 0 auto;
-    padding: 0;
     padding-bottom: 0.75rem;
   }
   .projects .project .project-description p {
@@ -858,6 +918,7 @@ Projects
 
 @media screen and (max-width: 768px) {
   .projects .project {
+    max-height: 60vh;
     width: 85%;
   }
   .projects .project .project-description {
@@ -891,7 +952,6 @@ Projects
 Contact
 ********************************************************************************************/
 .contact {
-  font-family: lato;
   font-weight: bold;
   z-index: 101;
   max-height: 100vh;
@@ -909,10 +969,11 @@ Contact
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #d8c3a5;
 }
 
 .contact h2 {
-  margin: 0 auto;
+  margin: 0.5rem auto;
   -webkit-transform: translateY(15px);
           transform: translateY(15px);
 }
@@ -932,11 +993,11 @@ Contact
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
-  border-radius: 0.7vw;
+  background-color: #eae7dc;
+  border-radius: 0.3vw;
   padding: 2rem 2rem 1.5rem;
-  -webkit-box-shadow: 10px 10px 10px black;
-          box-shadow: 10px 10px 10px black;
-  background-color: #042839;
+  -webkit-box-shadow: 5px 5px 5px #8e8d8a;
+          box-shadow: 5px 5px 5px #8e8d8a;
 }
 
 .contact input {
@@ -945,15 +1006,13 @@ Contact
   text-align: center;
   margin-bottom: 1.5rem;
   width: 75%;
-  border-radius: 0.7vw;
+  border-radius: 0.3vw;
   background-color: whitesmoke;
-  font-family: lato;
 }
 
 .contact textarea {
   font-size: 1rem;
-  font-family: lato;
-  border-radius: 0.7vw;
+  border-radius: 0.3vw;
   padding: 0.7rem 0rem 0rem 1rem;
   width: 90%;
   height: 200px;
@@ -964,29 +1023,28 @@ Contact
   margin-top: 1.5rem;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
-  border-radius: 0.7vw;
-  color: gray;
-  background-color: inherit;
+  border-radius: 0.3vw;
+  border: none;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: not-allowed;
+  background-color: inherit;
 }
 
 .contact .error {
   font-size: 1rem;
+  color: #8e8d8a;
 }
 
 .contact .enabled {
   cursor: pointer;
-  background-color: #024302;
-  color: white;
+  background-color: #d8c3a5;
+  color: #8e8d8a;
 }
 
 .contact .enabled:hover {
-  -webkit-box-shadow: 3px 3p 3px #442954;
-          box-shadow: 3px 3p 3px #442954;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .contact .footer {
