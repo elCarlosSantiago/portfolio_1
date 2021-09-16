@@ -445,6 +445,8 @@ Landing Page
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
+  margin: 0 4%;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1096,7 +1098,6 @@ Contact
 @media screen and (max-width: 450px) {
   .contact .contact-form {
     width: 80%;
-    padding: 1rem 1.5rem;
   }
   .contact .contact-form input {
     width: 80%;

@@ -348,6 +348,8 @@ Landing Page
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    margin: 0 4%;
+    text-align: center;
 
     @media screen and (max-width: $smallLaptop) {
       font-size: 3.5rem;
@@ -841,7 +843,6 @@ Contact
   @media screen and (max-width: $largePhone) {
     .contact-form {
       width: 80%;
-      padding: 1rem 1.5rem;
       input {
         width: 80%;
         margin-bottom: 1rem;
