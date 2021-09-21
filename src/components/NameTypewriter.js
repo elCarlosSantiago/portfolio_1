@@ -6,7 +6,7 @@ const NameTypewriter = () => {
       <Typewriter
         id="name-typewriter"
         onInit={(tw) => {
-          tw.start().changeDelay(100).typeString("Hello I'm Carlos Santiago");
+          tw.start().changeDelay(100).typeString("Hello, I'm Carlos Santiago");
         }}
       />
     </div>

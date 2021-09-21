@@ -394,7 +394,6 @@ Landing Page
 }
 
 .landing-page .header nav a:hover {
-  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -528,14 +527,12 @@ About
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-left: 4px solid #d8c3a5;
-  border-top: 4px solid #d8c3a5;
   padding: 1.2rem;
   padding-bottom: 4rem;
-  width: 40%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 70%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -561,6 +558,7 @@ About
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: justify;
 }
 
 .about section .text-and-link .resume-text {
@@ -798,26 +796,30 @@ Projects
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   background-color: #eae7dc;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
 }
 
 .projects h2 {
-  margin: 1rem auto;
+  margin: 4rem auto 1rem;
   font-weight: bold;
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
   text-align: center;
   color: #8e8d8a;
 }
 
-.projects .project {
-  margin: 0 auto;
+.projects .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects .projects-container .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,13 +831,13 @@ Projects
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
   min-height: 20vh;
-  max-height: 40vh;
+  max-height: 35vh;
   -webkit-box-shadow: 5px 5px 5px #8e8d8a;
           box-shadow: 5px 5px 5px #8e8d8a;
   margin: 1.5rem auto;
 }
 
-.projects .project .project-description {
+.projects .projects-container .project .project-description {
   background-color: #d8c3a5;
   width: 40%;
   display: -webkit-box;
@@ -845,44 +847,40 @@ Projects
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 1.5rem 1.5rem;
   text-align: justify;
 }
 
-.projects .project .project-description h3 {
+.projects .projects-container .project .project-description h3 {
   text-align: center;
 }
 
-.projects .project .project-description p {
+.projects .projects-container .project .project-description p {
   margin: 0.5rem 0.5rem;
   text-align: center;
 }
 
-.projects .project .project-description .link-wrapper {
+.projects .projects-container .project .project-description .link-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
 
-.projects .project .project-description .link-wrapper a:hover {
+.projects .projects-container .project .project-description .link-wrapper a:hover {
   color: #8e8d8a;
 }
 
-.projects .project .image-wrapper {
+.projects .projects-container .project .image-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,50 +890,50 @@ Projects
   width: 60%;
 }
 
-.projects .project img {
+.projects .projects-container .project img {
   width: 100%;
   overflow: hidden;
 }
 
 @media screen and (max-width: 1440px) {
-  .projects .project {
+  .projects .projects-container .project {
     max-height: 50vh;
     width: 80%;
   }
-  .projects .project .project-description {
+  .projects .projects-container .project .project-description {
     width: 40%;
   }
-  .projects .project .project-description h3 {
+  .projects .projects-container .project .project-description h3 {
     padding-bottom: 0.75rem;
   }
-  .projects .project .project-description p {
+  .projects .projects-container .project .project-description p {
     margin: 0 auto;
     padding: 0;
     padding-bottom: 0.5rem;
   }
-  .projects .project .project-description .link-wrapper p {
+  .projects .projects-container .project .project-description .link-wrapper p {
     margin: 0 0.5rem;
   }
-  .projects .project .image-wrapper {
+  .projects .projects-container .project .image-wrapper {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .projects .project {
+  .projects .projects-container .project {
     max-height: 60vh;
     width: 85%;
   }
-  .projects .project .project-description {
+  .projects .projects-container .project .project-description {
     width: 55%;
   }
-  .projects .project .image-wrapper {
+  .projects .projects-container .project .image-wrapper {
     width: 45%;
   }
 }
 
 @media screen and (max-width: 554px) {
-  .projects .project {
+  .projects .projects-container .project {
     width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -943,19 +941,19 @@ Projects
             flex-direction: column;
     height: auto;
   }
-  .projects .project .project-description {
+  .projects .projects-container .project .project-description {
     width: 100%;
   }
 }
 
-.projects .project:hover {
+.projects .projects-container .project:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
 
 /*******************************************************************************************
-Contact
-********************************************************************************************/
+  Contact
+  ********************************************************************************************/
 .contact {
   font-weight: bold;
   z-index: 101;
@@ -1010,7 +1008,7 @@ Contact
   padding: 0.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  width: 75%;
+  width: 90%;
   border-radius: 0.3vw;
   background-color: whitesmoke;
 }
@@ -1027,6 +1025,7 @@ Contact
 .contact button {
   margin-top: 1.5rem;
   font-size: 1.5rem;
+  width: 90%;
   padding: 0.5rem 1rem;
   border-radius: 0.3vw;
   border: none;
@@ -1090,9 +1089,6 @@ Contact
   .contact .contact-form {
     width: 70%;
   }
-  .contact .contact-form input {
-    width: 70%;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1100,7 +1096,6 @@ Contact
     width: 80%;
   }
   .contact .contact-form input {
-    width: 80%;
     margin-bottom: 1rem;
     padding: 0.25rem;
   }

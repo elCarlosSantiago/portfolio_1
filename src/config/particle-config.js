@@ -8,7 +8,7 @@ const particlesConfig = {
       },
     },
     color: {
-      value: '#ffffff',
+      value: '#D9F7FA',
     },
     shape: {
       type: 'circle',
@@ -26,17 +26,17 @@ const particlesConfig = {
       },
     },
     opacity: {
-      value: 0.3,
+      value:0.4,
       random: false,
       anim: {
         enable: false,
         speed: 0.5,
         opacity_min: 0.1,
-        sync: false,
+        sync: false, 
       },
     },
     size: {
-      value: 5,
+      value: 3.5,
       random: true,
       anim: {
         enable: true,
@@ -46,9 +46,9 @@ const particlesConfig = {
       },
     },
     line_linked: {
-      enable: false,
-      distance: 10,
-      color: '#ffffff',
+      enable: true,
+      distance: 17,
+      color: '#D9F7FA',
       opacity: 0.4,
       width: 1,
     },
@@ -95,7 +95,7 @@ const particlesConfig = {
         speed: 3,
       },
       repulse: {
-        distance: 140,
+        distance: 200,
         duration: 0.4,
       },
       push: {
