@@ -379,6 +379,7 @@ Landing Page
   margin-bottom: 0.5rem;
   opacity: 0.5;
   transition: all 0.4s ease-in-out;
+  margin-bottom: 1rem;
   cursor: pointer;
 }
 .fa-chevron-circle-down:hover {
@@ -416,7 +417,7 @@ About
       flex-flow: column nowrap;
       align-items: flex-start;
       justify-content: space-between;
-      text-align:justify ;
+      text-align: justify;
 
       .resume-text {
         display: flex;
@@ -673,7 +674,6 @@ Projects
         display: flex;
         justify-content: center;
         width: 60%;
-
       }
       img {
         width: 100%;
